@@ -1,5 +1,5 @@
 // Module 12: Cibler les actions commerciales adaptées à ses clients
-const module12Content = {
+window.module12Content = {
     1: {
         title: "Comprendre ses Clients",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
@@ -305,4 +305,9 @@ const module12Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module12Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

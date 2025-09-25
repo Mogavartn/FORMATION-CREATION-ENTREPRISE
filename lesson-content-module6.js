@@ -1,5 +1,5 @@
 // Module 6: Connaître les principales aides à la création d'entreprise
-const module6Content = {
+window.module6Content = {
     1: {
         title: "Introduction aux aides à la création d'entreprise",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
@@ -275,4 +275,9 @@ const module6Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module6Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

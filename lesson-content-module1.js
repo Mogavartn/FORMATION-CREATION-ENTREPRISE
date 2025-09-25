@@ -1,5 +1,5 @@
 // Module 1: Mettre ses compétences au service de son projet
-const module1Content = {
+window.module1Content = {
     1: {
         title: "À quoi vous attendre dans ce premier module",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
@@ -466,4 +466,9 @@ const module1Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module1Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

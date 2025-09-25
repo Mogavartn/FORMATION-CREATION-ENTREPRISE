@@ -1,5 +1,5 @@
 // Module 7: Où s'adresser pour déclarer son entreprise
-const module7Content = {
+window.module7Content = {
     1: {
         title: "Centre de Formalités des Entreprises (CFE)",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
@@ -245,4 +245,9 @@ const module7Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module7Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

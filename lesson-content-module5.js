@@ -1,5 +1,5 @@
 // Module 5: Comprendre les différents régimes fiscaux
-const module5Content = {
+window.module5Content = {
     1: {
         title: "Les régimes fiscaux des entreprises",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
@@ -245,4 +245,9 @@ const module5Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module5Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

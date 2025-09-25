@@ -1,5 +1,5 @@
 // Module 9: Obtenir les premières informations sur les structures juridiques
-const module9Content = {
+window.module9Content = {
     1: {
         title: "Comprendre les statuts juridiques",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
@@ -245,4 +245,9 @@ const module9Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module9Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

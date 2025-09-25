@@ -91,15 +91,27 @@
         let currentModule = parseInt(getUrlParameter('module')) || 1;
         let currentLesson = parseInt(getUrlParameter('lesson')) || 1;
         
-        // Initialiser la page de leçon
+        // Initialiser la page de leçon après chargement complet
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM chargé, initialisation de la leçon...');
         initializeLesson();
+    });
         
         // Debug: vérifier les modules chargés
         console.log('Modules chargés:', {
             module1Content: typeof window.module1Content,
             module2Content: typeof window.module2Content,
             module3Content: typeof window.module3Content,
-            module4Content: typeof window.module4Content
+            module4Content: typeof window.module4Content,
+            module5Content: typeof window.module5Content,
+            module6Content: typeof window.module6Content,
+            module7Content: typeof window.module7Content,
+            module8Content: typeof window.module8Content,
+            module9Content: typeof window.module9Content,
+            module10Content: typeof window.module10Content,
+            module11Content: typeof window.module11Content,
+            module12Content: typeof window.module12Content,
+            module13Content: typeof window.module13Content
         });
         
         function initializeLesson() {
@@ -117,18 +129,20 @@
         }
         
         function loadLessonContent() {
-            const lesson = getLessonData(currentModule, currentLesson);
-            
-            if (lesson) {
-                document.getElementById('lessonTitle').textContent = lesson.title;
-                document.getElementById('moduleTitle').textContent = lesson.moduleTitle;
-                document.getElementById('lessonContent').innerHTML = lesson.content;
-            } else {
-                // Fallback si aucune leçon n'est trouvée
-                document.getElementById('lessonTitle').textContent = 'Leçon non trouvée';
-                document.getElementById('moduleTitle').textContent = `Module ${currentModule}`;
-                document.getElementById('lessonContent').innerHTML = '<h1>Contenu en cours de préparation</h1><p>Cette leçon sera bientôt disponible.</p>';
-            }
+        console.log('Chargement du contenu...');
+        
+        const lesson = getLessonData(currentModule, currentLesson);
+        console.log('Données de la leçon:', lesson);
+        
+        if (lesson && lesson.content) {
+            document.getElementById('lessonTitle').textContent = lesson.title;
+            document.getElementById('moduleTitle').textContent = lesson.moduleTitle;
+            document.getElementById('lessonContent').innerHTML = lesson.content;
+        } else {
+            document.getElementById('lessonTitle').textContent = 'Erreur de chargement';
+            document.getElementById('moduleTitle').textContent = `Module ${currentModule}`;
+            document.getElementById('lessonContent').innerHTML = '<h1>Erreur de chargement</h1><p>Impossible de charger le contenu de cette leçon.</p>';
+        }
         }
         
         function markAsCompleted() {

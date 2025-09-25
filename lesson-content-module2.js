@@ -1,5 +1,5 @@
 // Module 2: Connaître son marché pour mieux vendre
-const module2Content = {
+window.module2Content = {
     1: {
         title: "Intro - Connaître son marché pour mieux vendre",
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
@@ -687,4 +687,9 @@ const module2Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module2Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

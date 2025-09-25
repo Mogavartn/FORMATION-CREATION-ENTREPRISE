@@ -1,5 +1,5 @@
 // Module 3: Définir les besoins et la rentabilité du projet
-const module3Content = {
+window.module3Content = {
     1: {
         title: "Définir les besoins et la rentabilité du projet",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
@@ -667,4 +667,9 @@ const module3Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module3Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

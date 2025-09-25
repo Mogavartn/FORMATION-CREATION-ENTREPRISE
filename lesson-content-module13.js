@@ -1,5 +1,5 @@
 // Module 13: Études de cas
-const module13Content = {
+window.module13Content = {
     1: {
         title: "Études de Cas",
         moduleTitle: "Module 13 : Études de cas",
@@ -35,4 +35,9 @@ const module13Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module13Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

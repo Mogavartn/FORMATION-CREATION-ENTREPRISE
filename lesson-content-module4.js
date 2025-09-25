@@ -1,5 +1,5 @@
 // Module 4: Choisir une structure juridique appropriée
-const module4Content = {
+window.module4Content = {
     1: {
         title: "Introduction aux structures juridiques",
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
@@ -641,4 +641,9 @@ const module4Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module4Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

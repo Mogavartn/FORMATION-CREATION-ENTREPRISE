@@ -1,5 +1,5 @@
 // Module 11: Valoriser son offre et choisir son circuit de distribution
-const module11Content = {
+window.module11Content = {
     1: {
         title: "Comprendre la Valeur de son Offre",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
@@ -245,4 +245,9 @@ const module11Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module11Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

@@ -1,5 +1,5 @@
 // Module 8: Atouts de la reprise d'entreprise
-const module8Content = {
+window.module8Content = {
     1: {
         title: "Moins de risques que la création",
         moduleTitle: "Module 8 : Atouts de la reprise d'entreprise",
@@ -245,4 +245,9 @@ const module8Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module8Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }

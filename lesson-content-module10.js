@@ -1,5 +1,5 @@
 // Module 10: Trouver ses clients en étudiant son marché
-const module10Content = {
+window.module10Content = {
     1: {
         title: "Identifier votre marché cible",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
@@ -305,4 +305,9 @@ const module10Content = {
 // Export pour utilisation dans d'autres fichiers
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = module10Content;
+}
+
+// Exposer globalement pour l'utilisation dans lesson.html
+if (typeof window !== 'undefined') {
+    window.module1Content = module1Content;
 }
