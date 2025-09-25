@@ -84,37 +84,44 @@
     <script src="lesson-content-module12.js"></script>
     <script src="lesson-content-module13.js"></script>
     <script>
-        // Vérifier l'authentification
-        checkAuth();
-        
-        // Variables globales pour la leçon actuelle
+        // Variables globales pour la leçon actuelle (AVANT toute autre fonction)
         let currentModule = parseInt(getUrlParameter('module')) || 1;
         let currentLesson = parseInt(getUrlParameter('lesson')) || 1;
         
-        // Initialiser la page de leçon après chargement complet
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('DOM chargé, initialisation de la leçon...');
-        initializeLesson();
-    });
+        // Fonction utilitaire déplacée en haut
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
         
-        // Debug: vérifier les modules chargés
-        console.log('Modules chargés:', {
-            module1Content: typeof window.module1Content,
-            module2Content: typeof window.module2Content,
-            module3Content: typeof window.module3Content,
-            module4Content: typeof window.module4Content,
-            module5Content: typeof window.module5Content,
-            module6Content: typeof window.module6Content,
-            module7Content: typeof window.module7Content,
-            module8Content: typeof window.module8Content,
-            module9Content: typeof window.module9Content,
-            module10Content: typeof window.module10Content,
-            module11Content: typeof window.module11Content,
-            module12Content: typeof window.module12Content,
-            module13Content: typeof window.module13Content
+        // Attendre que tous les scripts soient chargés
+        window.addEventListener('load', function() {
+            console.log('Tous les scripts chargés, initialisation...');
+            
+            // Debug: vérifier les modules chargés
+            console.log('Modules disponibles:', {
+                module1Content: typeof window.module1Content,
+                module2Content: typeof window.module2Content,
+                module3Content: typeof window.module3Content,
+                module4Content: typeof window.module4Content,
+                module5Content: typeof window.module5Content
+            });
+            
+            console.log('Variables globales:', {
+                currentModule: currentModule,
+                currentLesson: currentLesson
+            });
+            
+            // Vérifier l'authentification
+            checkAuth();
+            
+            // Initialiser la leçon
+            initializeLesson();
         });
         
         function initializeLesson() {
+            console.log(`Initialisation leçon: Module ${currentModule}, Leçon ${currentLesson}`);
+            
             // Charger la navigation
             generateNavigation();
             
@@ -129,20 +136,33 @@
         }
         
         function loadLessonContent() {
-        console.log('Chargement du contenu...');
-        
-        const lesson = getLessonData(currentModule, currentLesson);
-        console.log('Données de la leçon:', lesson);
-        
-        if (lesson && lesson.content) {
-            document.getElementById('lessonTitle').textContent = lesson.title;
-            document.getElementById('moduleTitle').textContent = lesson.moduleTitle;
-            document.getElementById('lessonContent').innerHTML = lesson.content;
-        } else {
-            document.getElementById('lessonTitle').textContent = 'Erreur de chargement';
-            document.getElementById('moduleTitle').textContent = `Module ${currentModule}`;
-            document.getElementById('lessonContent').innerHTML = '<h1>Erreur de chargement</h1><p>Impossible de charger le contenu de cette leçon.</p>';
-        }
+            console.log('Chargement du contenu...');
+            
+            const lesson = getLessonData(currentModule, currentLesson);
+            console.log('Données de la leçon récupérées:', lesson);
+            
+            if (lesson && lesson.content && lesson.content.trim().length > 0) {
+                console.log('Affichage du contenu...');
+                document.getElementById('lessonTitle').textContent = lesson.title;
+                document.getElementById('moduleTitle').textContent = lesson.moduleTitle;
+                document.getElementById('lessonContent').innerHTML = lesson.content;
+            } else {
+                console.error('Aucun contenu trouvé pour cette leçon');
+                document.getElementById('lessonTitle').textContent = 'Erreur de chargement';
+                document.getElementById('moduleTitle').textContent = `Module ${currentModule}`;
+                document.getElementById('lessonContent').innerHTML = `
+                    <h1>Contenu non trouvé</h1>
+                    <p>Impossible de charger le contenu pour le module ${currentModule}, leçon ${currentLesson}.</p>
+                    <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 20px 0;">
+                        <h4>Informations de debug :</h4>
+                        <ul>
+                            <li>Module demandé : ${currentModule}</li>
+                            <li>Leçon demandée : ${currentLesson}</li>
+                            <li>window.module${currentModule}Content existe : ${typeof window['module' + currentModule + 'Content']}</li>
+                        </ul>
+                    </div>
+                `;
+            }
         }
         
         function markAsCompleted() {
@@ -176,14 +196,22 @@
         function previousLesson() {
             const prevLesson = getPreviousLesson(currentModule, currentLesson);
             if (prevLesson) {
-                window.location.href = `lesson.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
+                if (prevLesson.isPDF) {
+                    window.location.href = `pdf-downloads.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
+                } else {
+                    window.location.href = `lesson.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
+                }
             }
         }
         
         function nextLesson() {
             const nextLesson = getNextLesson(currentModule, currentLesson);
             if (nextLesson) {
-                window.location.href = `lesson.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
+                if (nextLesson.isPDF) {
+                    window.location.href = `pdf-downloads.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
+                } else {
+                    window.location.href = `lesson.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
+                }
             }
         }
         
@@ -214,20 +242,19 @@
             
             if (!prevLesson) {
                 prevButton.disabled = true;
+                prevButton.style.display = 'none';
             } else {
                 prevButton.disabled = false;
+                prevButton.style.display = 'block';
             }
             
             if (!nextLesson) {
                 nextButton.disabled = true;
+                nextButton.style.display = 'none';
             } else {
                 nextButton.disabled = false;
+                nextButton.style.display = 'block';
             }
-        }
-        
-        function getUrlParameter(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
         }
         
         function showNotification(message) {
@@ -248,14 +275,31 @@
             document.body.appendChild(notification);
             
             setTimeout(() => {
-                notification.remove();
+                if (notification.parentNode) {
+                    notification.remove();
+                }
             }, 3000);
         }
         
         function downloadPDF(filename) {
-            // Simuler le téléchargement d'un PDF
+            // Créer le téléchargement de PDF
             const link = document.createElement('a');
-            link.href = `assets/pdfs/${filename}`;
+            link.href = `assets/pdf/${filename}`;
             link.download = filename;
+            link.target = '_blank';
+            document.body.appendChild(link);
             link.click();
+            document.body.removeChild(link);
+            
+            showNotification('Téléchargement en cours...');
         }
+        
+        function logout() {
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('username');
+            localStorage.removeItem('loginTime');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
