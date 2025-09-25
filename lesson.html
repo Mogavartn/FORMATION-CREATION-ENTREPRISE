@@ -150,4 +150,63 @@
         function updateNavigationButtons() {
             const prevButton = document.getElementById('prevButton');
             const nextButton = document.getElementById('nextButton');
-            const complete
+            const completeButton = document.getElementById('completeButton');
+            
+            // Vérifier si la leçon est déjà terminée
+            const lessonKey = `module_${currentModule}_lesson_${currentLesson}`;
+            const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
+            const isCompleted = progress[lessonKey] && progress[lessonKey].completed;
+            
+            if (isCompleted) {
+                completeButton.textContent = '✓ Terminé';
+                completeButton.style.background = '#28a745';
+                completeButton.disabled = true;
+            }
+            
+            // Gérer les boutons de navigation
+            const prevLesson = getPreviousLesson(currentModule, currentLesson);
+            const nextLesson = getNextLesson(currentModule, currentLesson);
+            
+            if (!prevLesson) {
+                prevButton.disabled = true;
+            }
+            
+            if (!nextLesson) {
+                nextButton.disabled = true;
+            }
+        }
+        
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        function showNotification(message) {
+            // Créer une notification temporaire
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #28a745;
+                color: white;
+                padding: 15px 20px;
+                border-radius: 6px;
+                z-index: 1000;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            `;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+        
+        function downloadPDF(filename) {
+            // Simuler le téléchargement d'un PDF
+            const link = document.createElement('a');
+            link.href = `assets/pdfs/${filename}`;
+            link.download = filename;
+            link.click();
+        }

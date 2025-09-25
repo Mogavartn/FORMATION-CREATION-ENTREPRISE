@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formation Entrepreneuriat - Fiches Complémentaires</title>
+    <title>Formation Entrepreneuriat - Téléchargements PDF</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,8 +43,8 @@
         <!-- Contenu principal -->
         <div class="main-content">
             <div class="content-header">
-                <h1 class="content-title" id="pageTitle">Fiches Complémentaires</h1>
-                <p class="content-subtitle" id="moduleTitle">Ressources téléchargeables</p>
+                <h1 class="content-title" id="pdfTitle">Documents PDF</h1>
+                <p class="content-subtitle" id="pdfModuleTitle">Module X</p>
             </div>
 
             <!-- Navigation de leçon -->
@@ -62,90 +62,9 @@
                 </button>
             </div>
 
-            <!-- Grille des PDF -->
-            <div class="pdf-grid" id="pdfGrid">
-                <div class="pdf-card">
-                    <div class="pdf-preview">
-                        📄
-                    </div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Fiche 1 - Plan d'Action Entrepreneurial</h3>
-                        <p class="pdf-description">Guide pratique pour élaborer votre plan d'action personnalisé</p>
-                        <button class="download-button" onclick="downloadPDF('fiche-1-plan-action.pdf')">
-                            Télécharger PDF
-                        </button>
-                    </div>
-                </div>
-
-                <div class="pdf-card">
-                    <div class="pdf-preview">
-                        📊
-                    </div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Fiche 2 - Template Business Model Canvas</h3>
-                        <p class="pdf-description">Modèle vierge pour structurer votre projet d'entreprise</p>
-                        <button class="download-button" onclick="downloadPDF('fiche-2-business-canvas.pdf')">
-                            Télécharger PDF
-                        </button>
-                    </div>
-                </div>
-
-                <div class="pdf-card">
-                    <div class="pdf-preview">
-                        💰
-                    </div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Fiche 3 - Modèle Prévisionnel Financier</h3>
-                        <p class="pdf-description">Template Excel pour vos prévisions financières</p>
-                        <button class="download-button" onclick="downloadPDF('fiche-3-previsionnel-financier.pdf')">
-                            Télécharger PDF
-                        </button>
-                    </div>
-                </div>
-
-                <div class="pdf-card">
-                    <div class="pdf-preview">
-                        ⚖️
-                    </div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Fiche 4 - Comparatif Statuts Juridiques</h3>
-                        <p class="pdf-description">Tableau comparatif des différentes formes juridiques</p>
-                        <button class="download-button" onclick="downloadPDF('fiche-4-statuts-juridiques.pdf')">
-                            Télécharger PDF
-                        </button>
-                    </div>
-                </div>
-
-                <div class="pdf-card">
-                    <div class="pdf-preview">
-                        🎯
-                    </div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Fiche 5 - Analyse de Marché</h3>
-                        <p class="pdf-description">Framework pour analyser votre marché cible</p>
-                        <button class="download-button" onclick="downloadPDF('fiche-5-analyse-marche.pdf')">
-                            Télécharger PDF
-                        </button>
-                    </div>
-                </div>
-
-                <div class="pdf-card">
-                    <div class="pdf-preview">
-                        📋
-                    </div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Fiche 6 - Checklist Création d'Entreprise</h3>
-                        <p class="pdf-description">Liste complète des démarches à effectuer</p>
-                        <button class="download-button" onclick="downloadPDF('fiche-6-checklist-creation.pdf')">
-                            Télécharger PDF
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
-                <h3 style="color: #007bff; margin-bottom: 10px;">💡 Comment utiliser ces fiches</h3>
-                <p>Ces fiches complémentaires sont conçues pour vous accompagner dans la mise en pratique des concepts abordés dans cette formation. Téléchargez-les et utilisez-les comme support de travail pour développer votre projet entrepreneurial.</p>
+            <!-- Contenu PDF -->
+            <div class="lesson-content" id="pdfContent">
+                <!-- Le contenu sera chargé dynamiquement -->
             </div>
         </div>
     </div>
@@ -155,57 +74,35 @@
         // Vérifier l'authentification
         checkAuth();
         
-        // Variables globales
+        // Variables globales pour la leçon actuelle
         let currentModule = parseInt(getUrlParameter('module')) || 1;
         let currentLesson = parseInt(getUrlParameter('lesson')) || 1;
         
-        // Initialiser la page
-        initializePage();
+        // Initialiser la page PDF
+        initializePDFPage();
         
-        function initializePage() {
+        function initializePDFPage() {
             // Charger la navigation
             generateNavigation();
             
-            // Mettre à jour les titres selon le module
-            updatePageTitle();
+            // Charger le contenu PDF
+            loadPDFContent();
             
             // Mettre à jour l'état des boutons
             updateNavigationButtons();
             
             // Mettre à jour la progression
             updateProgress();
-            
-            // Personnaliser les PDF selon le module
-            customizePDFsForModule();
         }
         
-        function updatePageTitle() {
-            const moduleData = getModuleData(currentModule);
-            if (moduleData) {
-                document.getElementById('pageTitle').textContent = 'Fiches Complémentaires';
-                document.getElementById('moduleTitle').textContent = moduleData.title;
+        function loadPDFContent() {
+            const lesson = getLessonData(currentModule, currentLesson);
+            
+            if (lesson) {
+                document.getElementById('pdfTitle').textContent = lesson.title;
+                document.getElementById('pdfModuleTitle').textContent = lesson.moduleTitle;
+                document.getElementById('pdfContent').innerHTML = lesson.content;
             }
-        }
-        
-        function customizePDFsForModule() {
-            // Vous pouvez personnaliser les PDF selon le module
-            // Par exemple, afficher des PDF différents selon le module courant
-        }
-        
-        function downloadPDF(filename) {
-            // Créer un lien de téléchargement
-            const link = document.createElement('a');
-            link.href = `assets/pdf/${filename}`;
-            link.download = filename;
-            link.target = '_blank';
-            
-            // Déclencher le téléchargement
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            
-            // Notification
-            showNotification(`Téléchargement de ${filename} en cours...`);
         }
         
         function markAsCompleted() {
@@ -233,28 +130,26 @@
             completeButton.disabled = true;
             
             // Notification
-            showNotification('Section marquée comme terminée !');
+            showNotification('Document marqué comme consulté !');
         }
         
         function previousLesson() {
             const prevLesson = getPreviousLesson(currentModule, currentLesson);
             if (prevLesson) {
-                if (prevLesson.isPDF) {
-                    window.location.href = `pdf-downloads.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
-                } else {
-                    window.location.href = `lesson.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
-                }
+                const url = prevLesson.isPDF ? 
+                    `pdf-downloads.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}` :
+                    `lesson.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
+                window.location.href = url;
             }
         }
         
         function nextLesson() {
             const nextLesson = getNextLesson(currentModule, currentLesson);
             if (nextLesson) {
-                if (nextLesson.isPDF) {
-                    window.location.href = `pdf-downloads.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
-                } else {
-                    window.location.href = `lesson.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
-                }
+                const url = nextLesson.isPDF ? 
+                    `pdf-downloads.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}` :
+                    `lesson.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
+                window.location.href = url;
             }
         }
         
@@ -263,42 +158,28 @@
             const nextButton = document.getElementById('nextButton');
             const completeButton = document.getElementById('completeButton');
             
-            // Vérifier si la section est déjà terminée
+            // Vérifier si la leçon est déjà terminée
             const lessonKey = `module_${currentModule}_lesson_${currentLesson}`;
             const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
+            const isCompleted = progress[lessonKey] && progress[lessonKey].completed;
             
-            if (progress[lessonKey] && progress[lessonKey].completed) {
+            if (isCompleted) {
                 completeButton.textContent = '✓ Terminé';
                 completeButton.style.background = '#28a745';
                 completeButton.disabled = true;
             }
             
-            // Bouton précédent
+            // Gérer les boutons de navigation
             const prevLesson = getPreviousLesson(currentModule, currentLesson);
-            if (prevLesson) {
-                prevButton.disabled = false;
-                prevButton.style.display = 'block';
-            } else {
+            const nextLesson = getNextLesson(currentModule, currentLesson);
+            
+            if (!prevLesson) {
                 prevButton.disabled = true;
-                prevButton.style.display = 'none';
             }
             
-            // Bouton suivant
-            const nextLesson = getNextLesson(currentModule, currentLesson);
-            if (nextLesson) {
-                nextButton.disabled = false;
-                nextButton.style.display = 'block';
-            } else {
+            if (!nextLesson) {
                 nextButton.disabled = true;
-                nextButton.style.display = 'none';
             }
-        }
-        
-        function logout() {
-            localStorage.removeItem('isLoggedIn');
-            localStorage.removeItem('username');
-            localStorage.removeItem('loginTime');
-            window.location.href = 'index.html';
         }
         
         function getUrlParameter(name) {
@@ -307,18 +188,18 @@
         }
         
         function showNotification(message) {
+            // Créer une notification temporaire
             const notification = document.createElement('div');
             notification.style.cssText = `
                 position: fixed;
                 top: 20px;
                 right: 20px;
-                background: #007bff;
+                background: #28a745;
                 color: white;
                 padding: 15px 20px;
                 border-radius: 6px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
                 z-index: 1000;
-                animation: slideIn 0.3s ease;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             `;
             notification.textContent = message;
             document.body.appendChild(notification);
@@ -326,6 +207,21 @@
             setTimeout(() => {
                 notification.remove();
             }, 3000);
+        }
+        
+        function downloadPDF(filename) {
+            // Simuler le téléchargement d'un PDF
+            const link = document.createElement('a');
+            link.href = `assets/pdfs/${filename}`;
+            link.download = filename;
+            link.click();
+        }
+        
+        function logout() {
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('username');
+            localStorage.removeItem('loginTime');
+            window.location.href = 'index.html';
         }
     </script>
 </body>
