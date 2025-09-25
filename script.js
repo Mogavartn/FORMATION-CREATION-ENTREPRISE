@@ -178,6 +178,121 @@ const lessonContent = {
                 </div>
             `
         },
+        2: {
+            title: "Comment lancer son projet d'entreprise sans se louper",
+            moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+            content: `
+                <h1>🚀 Comment lancer son projet d'entreprise sans se louper</h1>
+                
+                <p>Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
+                
+                <h2>📋 Les étapes essentielles du lancement</h2>
+                
+                <h3>1. Validation de l'idée</h3>
+                <p>Avant de vous lancer, assurez-vous que votre idée répond à un vrai besoin du marché :</p>
+                <ul>
+                    <li>Étudiez votre marché cible</li>
+                    <li>Analysez la concurrence</li>
+                    <li>Testez votre concept auprès de clients potentiels</li>
+                </ul>
+                
+                <h3>2. Planification financière</h3>
+                <p>Une gestion financière rigoureuse dès le départ est cruciale :</p>
+                <ul>
+                    <li>Établissez un budget détaillé</li>
+                    <li>Prévoyez les coûts cachés</li>
+                    <li>Planifiez vos sources de financement</li>
+                </ul>
+                
+                <h3>3. Structure juridique</h3>
+                <p>Choisissez la structure qui correspond le mieux à votre projet :</p>
+                <ul>
+                    <li>Auto-entrepreneur pour débuter</li>
+                    <li>SASU pour plus de flexibilité</li>
+                    <li>SARL pour un projet à plusieurs</li>
+                </ul>
+                
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                    <h3>⚠️ Erreurs à éviter</h3>
+                    <ul>
+                        <li>Se lancer sans étude de marché</li>
+                        <li>Négliger la gestion financière</li>
+                        <li>Sous-estimer le temps nécessaire</li>
+                        <li>Ignorer les aspects juridiques</li>
+                    </ul>
+                </div>
+            `
+        },
+        3: {
+            title: "Présentation des compétences requises pour être un chef d'entreprise",
+            moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+            content: `
+                <h1>👔 Présentation des compétences requises pour être un chef d'entreprise</h1>
+                
+                <p>Être chef d'entreprise nécessite un ensemble de compétences variées et complémentaires. Découvrons ensemble les principales.</p>
+                
+                <h2>🧠 Compétences techniques</h2>
+                
+                <h3>Gestion financière</h3>
+                <p>Savoir lire et interpréter les états financiers, gérer la trésorerie et prendre des décisions financières éclairées.</p>
+                
+                <h3>Marketing et commercial</h3>
+                <p>Comprendre les besoins clients, développer des stratégies marketing efficaces et savoir vendre.</p>
+                
+                <h3>Gestion des ressources humaines</h3>
+                <p>Recruter, motiver et diriger une équipe, gérer les conflits et développer les talents.</p>
+                
+                <h2>💡 Compétences comportementales</h2>
+                
+                <h3>Leadership</h3>
+                <p>Inspirer et guider son équipe vers un objectif commun, prendre des décisions difficiles.</p>
+                
+                <h3>Communication</h3>
+                <p>Savoir s'exprimer clairement, écouter activement et négocier efficacement.</p>
+                
+                <h3>Adaptabilité</h3>
+                <p>Être capable de s'adapter rapidement aux changements du marché et aux nouvelles technologies.</p>
+                
+                <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                    <h3>💪 Développement des compétences</h3>
+                    <p>Ces compétences peuvent être développées par la formation, l'expérience et la pratique. L'important est d'identifier vos points forts et vos axes d'amélioration.</p>
+                </div>
+            `
+        },
+        4: {
+            title: "Comprendre l'importance des compétences entrepreneuriales",
+            moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+            content: `
+                <h1>🎯 Comprendre l'importance des compétences entrepreneuriales</h1>
+                
+                <p>Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité.</p>
+                
+                <h2>🔍 Pourquoi ces compétences sont-elles cruciales ?</h2>
+                
+                <h3>1. Différenciation concurrentielle</h3>
+                <p>Dans un marché compétitif, ce sont souvent les compétences de l'entrepreneur qui font la différence entre le succès et l'échec.</p>
+                
+                <h3>2. Gestion des défis</h3>
+                <p>L'entrepreneuriat est parsemé d'obstacles. Des compétences solides vous aident à les surmonter efficacement.</p>
+                
+                <h3>3. Croissance et développement</h3>
+                <p>Pour faire grandir votre entreprise, vous devez maîtriser différents domaines de compétences.</p>
+                
+                <h2>📊 Impact sur la performance</h2>
+                
+                <p>Des études montrent que les entrepreneurs avec des compétences développées :</p>
+                <ul>
+                    <li>Ont 3x plus de chances de survie après 5 ans</li>
+                    <li>Génèrent 40% plus de revenus</li>
+                    <li>Attirent plus facilement des investisseurs</li>
+                </ul>
+                
+                <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <h3>📈 Retour sur investissement</h3>
+                    <p>Investir dans le développement de vos compétences entrepreneuriales est l'un des meilleurs investissements que vous puissiez faire pour votre entreprise.</p>
+                </div>
+            `
+        },
         5: {
             title: "Analyse des compétences clés pour gérer une entreprise",
             moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
@@ -190,76 +305,397 @@ const lessonContent = {
                 <h2>🛠️ Compétences Requises pour l'Entrepreneuriat</h2>
                 
                 <h3>👥 Leadership</h3>
-                <p>Un bon chef d'entreprise ne se contente pas de diriger ; il doit inspirer et motiver son équipe. Steve Jobs, co-fondateur d'Apple, est souvent cité comme un exemple de leader visionnaire. Il a su inspirer ses employés à repousser les limites et à innover constamment.</p>
-                
-                <p><strong>Qualités essentielles :</strong></p>
-                <ul>
-                    <li><strong>Vision :</strong> Une capacité à envisager l'avenir et à guider l'entreprise dans cette direction.</li>
-                    <li><strong>Empathie :</strong> Comprendre et répondre aux besoins de l'équipe pour maintenir une motivation élevée.</li>
-                </ul>
+                <p>Un bon chef d'entreprise ne se contente pas de diriger ; il doit inspirer et motiver son équipe. Steve Jobs, co-fondateur d'Apple, est souvent cité comme un exemple de leader visionnaire.</p>
                 
                 <h3>🧠 Prise de Décision</h3>
-                <p>Prenons l'exemple de Jeff Bezos, fondateur d'Amazon. Sa décision d'élargir l'entreprise au-delà des livres et d'investir dans des technologies émergentes comme Alexa et AWS (Amazon Web Services) illustre l'importance de la prise de décision stratégique.</p>
-                
-                <p><strong>Étapes clés :</strong></p>
-                <ul>
-                    <li><strong>Analyse des Données :</strong> Évaluer les informations et les tendances pour prendre des décisions informées.</li>
-                    <li><strong>Prise de Risque Calculée :</strong> Savoir quand suivre son instinct tout en calculant les risques potentiels.</li>
-                </ul>
+                <p>Prenons l'exemple de Jeff Bezos, fondateur d'Amazon. Sa décision d'élargir l'entreprise au-delà des livres illustre l'importance de la prise de décision stratégique.</p>
                 
                 <h3>💵 Gestion Financière</h3>
-                <p>L'une des erreurs courantes des entrepreneurs est de négliger la gestion des finances, conduisant souvent à des problèmes de liquidité. Sara Blakely, fondatrice de Spanx, a commencé sa société avec seulement 5 000 $ d'économies. Sa rigoureuse gestion financière lui a permis de transformer cette somme en une entreprise milliardaire.</p>
-                
-                <p><strong>Principes :</strong></p>
-                <ul>
-                    <li><strong>Budgeting :</strong> Planification rigoureuse des entrées et sorties d'argent.</li>
-                    <li><strong>Investissement Intelligent :</strong> Savoir où et comment allouer les ressources financières pour maximiser la croissance.</li>
-                </ul>
+                <p>Sara Blakely, fondatrice de Spanx, a commencé sa société avec seulement 5 000 $ d'économies. Sa rigoureuse gestion financière lui a permis de transformer cette somme en une entreprise milliardaire.</p>
                 
                 <h3>📈 Planification Stratégique</h3>
-                <p>La planification stratégique détermine la direction à long terme de l'entreprise. Prenons l'exemple de l'entreprise Tesla, qui a élaboré un plan stratégique clair pour révolutionner l'industrie automobile en se concentrant d'abord sur des véhicules électriques de luxe avant d'élargir son marché.</p>
-                
-                <p><strong>Éléments Clés :</strong></p>
-                <ul>
-                    <li><strong>Analyse SWOT :</strong> Identifier les Forces, Faiblesses, Opportunités et Menaces.</li>
-                    <li><strong>Objectifs SMART :</strong> Définir des objectifs Spécifiques, Mesurables, Atteignables, Réalistes et Temporels.</li>
-                </ul>
-                
-                <h2>💡 Le Rôle de l'Entrepreneur</h2>
-                <p>L'entrepreneur est le moteur de la croissance et du succès de son entreprise. Il doit non seulement gérer quotidiennement les opérations, mais aussi être visionnaire et innovant. Elon Musk est un exemple typique d'entrepreneur multidimensionnel, naviguant entre ses diverses entreprises comme SpaceX et Tesla, tout en inspirant un changement global.</p>
-                
-                <h3>🌟 Adaptabilité et Innovation</h3>
-                <p>Dans un monde des affaires en constante évolution, les qualités d'adaptabilité et d'innovation sont cruciales. La pandémie de COVID-19 a par exemple montré combien il était essentiel pour des entreprises de pouvoir s'adapter rapidement à des conditions changeantes.</p>
-                
-                <p><strong>Études de cas :</strong></p>
-                <ul>
-                    <li><strong>Zoom :</strong> Avant la pandémie, Zoom n'était qu'une autre application de visioconférence. Son équipe dirigeante a su saisir l'opportunité en répondant rapidement à la demande croissante, démontrant ainsi une grande adaptabilité.</li>
-                    <li><strong>Blockbuster vs. Netflix :</strong> L'histoire de Blockbuster, qui n'a pas su s'adapter aux nouvelles tendances de consommation et a fait faillite, comparée à Netflix, qui a su tirer parti des technologies numériques pour transformer son modèle économique.</li>
-                </ul>
-                
-                <h3>🚀 Gestion des Risques</h3>
-                <p>Chaque entreprise est confrontée à des incertitudes. Richard Branson, fondateur du groupe Virgin, est renommé pour sa gestion des risques efficace, qu'il qualifie de "calculés". Sa philosophie repose sur l'expérimentation avec des filets de sécurité, minimisant l'impact des échecs potentiels.</p>
-                
-                <p><strong>Approches :</strong></p>
-                <ul>
-                    <li><strong>Diversification :</strong> Ne pas placer tous les œufs dans le même panier.</li>
-                    <li><strong>Assurances :</strong> Utiliser les assurances pour protéger l'entreprise contre les risques imprévisibles.</li>
-                </ul>
-                
-                <h2>🔍 Conclusion</h2>
-                <p>Être un chef d'entreprise requiert une combinaison unique de compétences. Du leadership à la gestion financière, en passant par la prise de décision, la planification stratégique, et les capacités d'adaptabilité et d'innovation, chaque aspect contribue à créer et à maintenir une entreprise prospère. En comprenant et en développant ces compétences, les entrepreneurs peuvent non seulement survivre mais aussi prospérer dans le monde compétitif des affaires.</p>
+                <p>La planification stratégique détermine la direction à long terme de l'entreprise. Tesla a élaboré un plan stratégique clair pour révolutionner l'industrie automobile.</p>
                 
                 <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
-                    <h3>📝 Devoir: Création d'un plan d'action pour devenir un chef d'entreprise</h3>
-                    <p><strong>Instructions:</strong></p>
-                    <p><strong>Étape 1 : Sélection des compétences requises</strong><br>
-                    Identifier et décrire les compétences nécessaires pour être un chef d'entreprise, telles que le leadership, la prise de décision, la gestion financière et la planification stratégique.</p>
+                    <h3>📝 Exercice pratique</h3>
+                    <p>Identifiez vos 3 compétences les plus fortes et 3 domaines à développer pour votre projet entrepreneurial.</p>
+                </div>
+            `
+        },
+        6: {
+            title: "Synthèse",
+            moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+            content: `
+                <h1>📋 Synthèse du Module 1</h1>
+                
+                <p>Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat.</p>
+                
+                <h2>🎯 Points clés à retenir</h2>
+                
+                <h3>1. Les compétences entrepreneuriales essentielles</h3>
+                <ul>
+                    <li><strong>Leadership :</strong> Capacité à inspirer et diriger une équipe</li>
+                    <li><strong>Prise de décision :</strong> Savoir analyser et choisir les bonnes options</li>
+                    <li><strong>Gestion financière :</strong> Maîtriser les aspects financiers de l'entreprise</li>
+                    <li><strong>Planification stratégique :</strong> Définir et atteindre des objectifs clairs</li>
+                </ul>
+                
+                <h3>2. L'importance du développement personnel</h3>
+                <p>Ces compétences ne sont pas innées mais peuvent être développées par la formation continue, l'expérience pratique et le mentorat.</p>
+                
+                <h2>🚀 Prochaines étapes</h2>
+                <p>Dans le module suivant, nous aborderons l'analyse de marché et la connaissance de vos clients.</p>
+                
+                <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+                    <h3>💡 Action recommandée</h3>
+                    <p>Prenez le temps de réfléchir à vos propres compétences actuelles et identifiez les domaines que vous souhaitez développer en priorité.</p>
+                </div>
+            `
+        },
+        7: {
+            title: "SMART Goals",
+            moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+            content: `
+                <h1>🎯 SMART Goals</h1>
+                
+                <p>Les objectifs SMART sont un outil puissant pour définir et atteindre vos objectifs entrepreneuriaux de manière efficace et mesurable.</p>
+                
+                <h2>📝 Qu'est-ce que SMART ?</h2>
+                
+                <p>SMART est un acronyme qui signifie :</p>
+                
+                <h3>🔤 S - Spécifique</h3>
+                <p>Votre objectif doit être clair et précis. Évitez les formulations vagues comme "augmenter les ventes".</p>
+                
+                <h3>📊 M - Mesurable</h3>
+                <p>Vous devez pouvoir quantifier votre objectif avec des chiffres, des pourcentages, des montants.</p>
+                
+                <h3>✅ A - Atteignable</h3>
+                <p>Votre objectif doit être réaliste compte tenu de vos ressources et capacités actuelles.</p>
+                
+                <h3>🎯 R - Pertinent (Relevant)</h3>
+                <p>L'objectif doit être aligné avec votre vision d'entreprise et contribuer à vos objectifs à long terme.</p>
+                
+                <h3>⏰ T - Temporel</h3>
+                <p>Définissez une échéance claire pour atteindre votre objectif.</p>
+                
+                <h2>💡 Exemple d'objectif SMART</h2>
+                
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                    <h4>✅ Bon exemple :</h4>
+                    <p><strong>"Augmenter le chiffre d'affaires de mon entreprise de 30% d'ici la fin de l'année en développant 3 nouveaux produits et en ciblant 2 nouveaux segments de marché."</strong></p>
+                </div>
+                
+                <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                    <h3>💪 Avantages des objectifs SMART</h3>
+                    <ul>
+                        <li>Clarté et focus</li>
+                        <li>Motivation accrue</li>
+                        <li>Meilleure planification</li>
+                        <li>Suivi facilité</li>
+                        <li>Probabilité de succès plus élevée</li>
+                    </ul>
+                </div>
+            `
+        },
+        8: {
+            title: "Fiches Complémentaires",
+            moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+            type: "pdf",
+            content: `
+                <h1>📄 Fiches Complémentaires - Module 1</h1>
+                
+                <p>Voici les documents complémentaires pour approfondir les concepts abordés dans ce module.</p>
+                
+                <div class="pdf-grid">
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📋</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Guide des Compétences Entrepreneuriales</h3>
+                            <p class="pdf-description">Un guide détaillé des compétences essentielles pour réussir en entrepreneuriat</p>
+                            <button class="download-button" onclick="downloadPDF('guide-competences.pdf')">Télécharger</button>
+                        </div>
+                    </div>
                     
-                    <p><strong>Étape 2 : Analyse du rôle de l'entrepreneur</strong><br>
-                    Analyser le rôle de l'entrepreneur dans la réussite et la croissance de l'entreprise, en mettant l'accent sur l'importance de l'adaptabilité, de l'innovation et de la gestion des risques.</p>
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🎯</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Template Objectifs SMART</h3>
+                            <p class="pdf-description">Modèle pour définir vos objectifs selon la méthode SMART</p>
+                            <button class="download-button" onclick="downloadPDF('template-smart.pdf')">Télécharger</button>
+                        </div>
+                    </div>
                     
-                    <p><strong>Étape 3 : Élaboration d'un plan d'action</strong><br>
-                    Créer un plan d'action détaillé décrivant comment acquérir et développer ces compétences, en mettant l'accent sur le développement personnel, la formation et l'expérience pratique.</p>
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📊</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Auto-évaluation des Compétences</h3>
+                            <p class="pdf-description">Questionnaire pour évaluer vos compétences actuelles</p>
+                            <button class="download-button" onclick="downloadPDF('auto-evaluation.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+    },
+    2: {
+        1: {
+            title: "Analyse du Marché",
+            moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
+            content: `
+                <h1>📊 Analyse du Marché</h1>
+                
+                <p>L'analyse de marché est une étape fondamentale pour comprendre votre environnement concurrentiel et identifier les opportunités.</p>
+                
+                <h2>🔍 Qu'est-ce que l'analyse de marché ?</h2>
+                <p>L'analyse de marché consiste à étudier systématiquement votre secteur d'activité pour comprendre :</p>
+                <ul>
+                    <li>La taille et la croissance du marché</li>
+                    <li>Les tendances et évolutions</li>
+                    <li>Les segments de clientèle</li>
+                    <li>Les forces concurrentielles</li>
+                </ul>
+                
+                <h2>📈 Méthodes d'analyse</h2>
+                
+                <h3>1. Analyse quantitative</h3>
+                <ul>
+                    <li><strong>Données chiffrées :</strong> CA du secteur, nombre d'entreprises, croissance</li>
+                    <li><strong>Sources :</strong> INSEE, études sectorielles, rapports d'experts</li>
+                </ul>
+                
+                <h3>2. Analyse qualitative</h3>
+                <ul>
+                    <li><strong>Entretiens :</strong> Avec des clients potentiels et des experts</li>
+                    <li><strong>Observation :</strong> Comportements d'achat, tendances</li>
+                </ul>
+                
+                <h2>🎯 Les 5 forces de Porter</h2>
+                <p>Un outil essentiel pour analyser la concurrence :</p>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <h4>1. Intensité concurrentielle</h4>
+                    <p>Nombre et force des concurrents directs</p>
+                    
+                    <h4>2. Menace des nouveaux entrants</h4>
+                    <p>Facilité pour de nouveaux acteurs d'entrer sur le marché</p>
+                    
+                    <h4>3. Pouvoir de négociation des fournisseurs</h4>
+                    <p>Influence des fournisseurs sur vos coûts</p>
+                    
+                    <h4>4. Pouvoir de négociation des clients</h4>
+                    <p>Capacité des clients à influencer vos prix</p>
+                    
+                    <h4>5. Menace des produits de substitution</h4>
+                    <p>Risque que votre produit soit remplacé par une alternative</p>
+                </div>
+                
+                <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+                    <h3>💡 Conseil pratique</h3>
+                    <p>L'analyse de marché doit être un processus continu, pas un exercice ponctuel. Le marché évolue constamment et votre analyse doit suivre ces évolutions.</p>
+                </div>
+            `
+        },
+        2: {
+            title: "Analyse de la clientèle et de la concurrence",
+            moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
+            content: `
+                <h1>👥 Analyse de la clientèle et de la concurrence</h1>
+                
+                <p>Comprendre vos clients et vos concurrents est essentiel pour développer une stratégie commerciale efficace.</p>
+                
+                <h2>🎯 Analyse de la clientèle</h2>
+                
+                <h3>1. Segmentation des clients</h3>
+                <p>Divisez votre marché en groupes homogènes selon :</p>
+                <ul>
+                    <li><strong>Démographie :</strong> Âge, sexe, revenus, localisation</li>
+                    <li><strong>Psychographie :</strong> Valeurs, style de vie, motivations</li>
+                    <li><strong>Comportement :</strong> Fréquence d'achat, sensibilité au prix</li>
+                </ul>
+                
+                <h3>2. Personas clients</h3>
+                <p>Créez des profils détaillés de vos clients types :</p>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                    <h4>Exemple de persona :</h4>
+                    <p><strong>Marie, 35 ans, cadre</strong></p>
+                    <ul>
+                        <li>Revenus : 45 000€/an</li>
+                        <li>Valeurs : Qualité, praticité, écologie</li>
+                        <li>Comportement : Achète en ligne, sensible aux avis</li>
+                        <li>Besoins : Gain de temps, produits durables</li>
+                    </ul>
+                </div>
+                
+                <h2>🏢 Analyse de la concurrence</h2>
+                
+                <h3>1. Identification des concurrents</h3>
+                <ul>
+                    <li><strong>Concurrents directs :</strong> Même produit, même marché</li>
+                    <li><strong>Concurrents indirects :</strong> Solutions alternatives</li>
+                    <li><strong>Concurrents potentiels :</strong> Acteurs qui pourraient entrer</li>
+                </ul>
+                
+                <h3>2. Analyse comparative</h3>
+                <p>Comparez vos concurrents sur :</p>
+                <ul>
+                    <li>Positionnement et image de marque</li>
+                    <li>Gamme de produits/services</li>
+                    <li>Prix et politique tarifaire</li>
+                    <li>Canaux de distribution</li>
+                    <li>Forces et faiblesses</li>
+                </ul>
+                
+                <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                    <h3>💡 Stratégies gagnantes</h3>
+                    <ul>
+                        <li>Concentrez-vous sur les segments les plus rentables</li>
+                        <li>Exploitez les faiblesses de vos concurrents</li>
+                        <li>Développez des avantages difficiles à copier</li>
+                        <li>Surveillez constamment l'évolution du marché</li>
+                    </ul>
+                </div>
+            `
+        },
+        5: {
+            title: "Customer Journey Mapping",
+            moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
+            content: `
+                <h1>🗺️ Customer Journey Mapping</h1>
+                
+                <p>Le Customer Journey Mapping vous permet de comprendre et d'optimiser l'expérience client à chaque étape de son parcours.</p>
+                
+                <h2>🎯 Qu'est-ce que le Customer Journey ?</h2>
+                <p>C'est l'ensemble des interactions qu'un client a avec votre marque, depuis la prise de conscience de son besoin jusqu'à la fidélisation.</p>
+                
+                <h2>📋 Les étapes du parcours client</h2>
+                
+                <h3>1. Prise de conscience (Awareness)</h3>
+                <p>Le client réalise qu'il a un problème ou un besoin :</p>
+                <ul>
+                    <li><strong>Déclencheurs :</strong> Événements, changements, frustrations</li>
+                    <li><strong>Actions :</strong> Recherche d'informations</li>
+                    <li><strong>Émotions :</strong> Inquiétude, curiosité</li>
+                </ul>
+                
+                <h3>2. Considération (Consideration)</h3>
+                <p>Le client explore les solutions possibles :</p>
+                <ul>
+                    <li><strong>Actions :</strong> Comparaison des options</li>
+                    <li><strong>Sources :</strong> Avis, recommandations, démos</li>
+                    <li><strong>Émotions :</strong> Hésitation, excitation</li>
+                </ul>
+                
+                <h3>3. Décision (Decision)</h3>
+                <p>Le client choisit une solution :</p>
+                <ul>
+                    <li><strong>Facteurs :</strong> Prix, qualité, réputation</li>
+                    <li><strong>Actions :</strong> Achat, signature</li>
+                    <li><strong>Émotions :</strong> Confiance, anticipation</li>
+                </ul>
+                
+                <h3>4. Utilisation (Usage)</h3>
+                <p>Le client utilise votre produit/service :</p>
+                <ul>
+                    <li><strong>Actions :</strong> Installation, formation, utilisation</li>
+                    <li><strong>Points de contact :</strong> Support, documentation</li>
+                    <li><strong>Émotions :</strong> Satisfaction, frustration</li>
+                </ul>
+                
+                <h3>5. Fidélisation (Retention)</h3>
+                <p>Le client devient un ambassadeur :</p>
+                <ul>
+                    <li><strong>Actions :</strong> Renouvellement, recommandation</li>
+                    <li><strong>Facteurs :</strong> Satisfaction, valeur perçue</li>
+                    <li><strong>Émotions :</strong> Confiance, loyauté</li>
+                </ul>
+                
+                <h2>🛠️ Comment créer votre Customer Journey Map</h2>
+                
+                <h3>Étape 1 : Définir vos personas</h3>
+                <p>Identifiez vos clients types et leurs caractéristiques spécifiques.</p>
+                
+                <h3>Étape 2 : Lister les points de contact</h3>
+                <p>Recensez tous les moments où le client interagit avec votre marque :</p>
+                <ul>
+                    <li>Site web</li>
+                    <li>Réseaux sociaux</li>
+                    <li>Email</li>
+                    <li>Téléphone</li>
+                    <li>Magasin physique</li>
+                </ul>
+                
+                <h3>Étape 3 : Identifier les émotions</h3>
+                <p>Pour chaque étape, déterminez :</p>
+                <ul>
+                    <li>Les émotions positives</li>
+                    <li>Les frustrations</li>
+                    <li>Les moments de doute</li>
+                </ul>
+                
+                <h3>Étape 4 : Analyser les opportunités</h3>
+                <p>Identifiez les points d'amélioration :</p>
+                <ul>
+                    <li>Moments de friction</li>
+                    <li>Opportunités de personnalisation</li>
+                    <li>Points de contact manqués</li>
+                </ul>
+                
+                <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                    <h3>💡 Outils recommandés</h3>
+                    <ul>
+                        <li><strong>Miro :</strong> Création collaborative de cartes</li>
+                        <li><strong>Lucidchart :</strong> Diagrammes professionnels</li>
+                        <li><strong>Hotjar :</strong> Analyse du comportement utilisateur</li>
+                        <li><strong>Google Analytics :</strong> Données de parcours</li>
+                    </ul>
+                </div>
+            `
+        },
+        6: {
+            title: "Fiches Complémentaires",
+            moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
+            type: "pdf",
+            content: `
+                <h1>📄 Fiches Complémentaires - Module 2</h1>
+                
+                <p>Voici les documents complémentaires pour approfondir l'analyse de marché et les stratégies commerciales.</p>
+                
+                <div class="pdf-grid">
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📊</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Guide d'Analyse de Marché</h3>
+                            <p class="pdf-description">Méthodologie complète pour analyser votre marché et identifier les opportunités</p>
+                            <button class="download-button" onclick="downloadPDF('guide-analyse-marche.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🎯</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Template Customer Journey</h3>
+                            <p class="pdf-description">Modèle pour cartographier le parcours client de votre entreprise</p>
+                            <button class="download-button" onclick="downloadPDF('template-customer-journey.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📋</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Argumentaire Commercial</h3>
+                            <p class="pdf-description">Structure et exemples d'argumentaires commerciaux efficaces</p>
+                            <button class="download-button" onclick="downloadPDF('argumentaire-commercial.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+                    <h3>🎥 Vidéos complémentaires</h3>
+                    <div style="margin: 15px 0;">
+                        <h4>Business Model Canvas</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S9GAk_2de2g" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                    </div>
                 </div>
             `
         }
