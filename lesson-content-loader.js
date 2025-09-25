@@ -5,7 +5,7 @@
 const module1Lessons = {};
 
 // Module 2 content placeholder - will be loaded from lesson-content-module2.js  
-const module2Lessons = {};
+// Note: The actual content is defined in lesson-content-module2.js as module2Content
 
 // Additional modules will be added here
 const module3Lessons = {};
