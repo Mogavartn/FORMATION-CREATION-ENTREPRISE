@@ -6,58 +6,49 @@ window.module2Content = {
         content: `
             <h1>📊 Intro - Connaître son marché pour mieux vendre</h1>
             
-            <p>L'analyse de marché est une étape fondamentale pour comprendre votre environnement concurrentiel et identifier les opportunités.</p>
+            <p>L'analyse de marché est une étape fondamentale pour comprendre votre environnement concurrentiel et identifier les opportunités. Savoir qui sont vos clients, ce qu'ils veulent et comment vos concurrents répondent à leurs besoins est essentiel pour développer une stratégie commerciale efficace.</p>
             
             <div style="text-align: center; margin: 30px 0;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kRiHQjF9ylM" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
             </div>
             
-            <h2>🔍 Qu'est-ce que l'analyse de marché ?</h2>
-            <p>L'analyse de marché consiste à étudier systématiquement votre secteur d'activité pour comprendre :</p>
-            <ul>
-                <li>La taille et la croissance du marché</li>
-                <li>Les tendances et évolutions</li>
-                <li>Les segments de clientèle</li>
-                <li>Les forces concurrentielles</li>
-            </ul>
-            
-            <h2>🖼️ Visualisation des concepts clés</h2>
+            <h2>🔍 Les piliers de l'analyse de marché</h2>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
                 <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
                     <img src="assets/images/01_IMAGE_ETUDEDEMARCHE.png" alt="Étude de Marché" style="max-width: 100%; height: auto; margin-bottom: 15px;">
                     <h4>Étude de Marché</h4>
-                    <p>Analyser systématiquement votre secteur d'activité</p>
+                    <p>L'étude de marché consiste à analyser systématiquement votre secteur d'activité pour comprendre sa taille, sa croissance, ses tendances et ses évolutions. C'est le fondement de toute stratégie commerciale réussie.</p>
                 </div>
                 
                 <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
                     <img src="assets/images/01_IMAGE_ANALYSE.png" alt="Analyse" style="max-width: 100%; height: auto; margin-bottom: 15px;">
                     <h4>Analyse</h4>
-                    <p>Comprendre les données et tendances du marché</p>
+                    <p>L'analyse approfondie des données et tendances du marché vous permet d'identifier les opportunités, de comprendre les besoins des clients et d'anticiper les évolutions futures de votre secteur.</p>
                 </div>
                 
                 <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
                     <img src="assets/images/01_IMAGE_SWOT.png" alt="Analyse SWOT" style="max-width: 100%; height: auto; margin-bottom: 15px;">
                     <h4>Analyse SWOT</h4>
-                    <p>Forces, Faiblesses, Opportunités et Menaces</p>
+                    <p>L'analyse SWOT (Forces, Faiblesses, Opportunités et Menaces) est un outil puissant pour évaluer votre position concurrentielle et identifier les axes d'amélioration et de développement.</p>
                 </div>
                 
                 <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
                     <img src="assets/images/01_IMAGE_CONCURRENCE.png" alt="Concurrence" style="max-width: 100%; height: auto; margin-bottom: 15px;">
                     <h4>Concurrence</h4>
-                    <p>Identifier et analyser vos concurrents</p>
+                    <p>Identifier et analyser vos concurrents directs et indirects vous permet de comprendre leur positionnement, leurs stratégies et leurs points faibles pour mieux vous différencier.</p>
                 </div>
                 
                 <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
                     <img src="assets/images/01_IMAGE_COMPORTEMENTS.png" alt="Comportements" style="max-width: 100%; height: auto; margin-bottom: 15px;">
                     <h4>Comportements</h4>
-                    <p>Comprendre les habitudes d'achat des clients</p>
+                    <p>Comprendre les habitudes d'achat, les motivations et les préférences de vos clients vous permet d'adapter votre offre et vos messages commerciaux pour maximiser votre impact.</p>
                 </div>
                 
                 <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
                     <img src="assets/images/01_IMAGE_ADAPTATIONOFFRE.png" alt="Adaptation de l'Offre" style="max-width: 100%; height: auto; margin-bottom: 15px;">
                     <h4>Adaptation de l'Offre</h4>
-                    <p>Adapter votre produit aux besoins du marché</p>
+                    <p>Adapter votre produit ou service aux besoins spécifiques du marché et aux attentes de vos clients est la clé pour créer une proposition de valeur différenciante et attractive.</p>
                 </div>
             </div>
             
@@ -67,29 +58,31 @@ window.module2Content = {
             <ul>
                 <li><strong>Données chiffrées :</strong> CA du secteur, nombre d'entreprises, croissance</li>
                 <li><strong>Sources :</strong> INSEE, études sectorielles, rapports d'experts</li>
+                <li><strong>Outils :</strong> Statistiques officielles, bases de données professionnelles</li>
             </ul>
             
             <h3>2. Analyse qualitative</h3>
             <ul>
                 <li><strong>Entretiens :</strong> Avec des clients potentiels et des experts</li>
                 <li><strong>Observation :</strong> Comportements d'achat, tendances</li>
+                <li><strong>Focus groups :</strong> Discussions avec des groupes cibles</li>
             </ul>
             
             <h2>🎯 Les 5 forces de Porter</h2>
-            <p>Un outil essentiel pour analyser la concurrence :</p>
+            <p>Un outil essentiel pour analyser la concurrence et comprendre la structure de votre marché :</p>
             
             <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
                 <h4>1. Intensité concurrentielle</h4>
-                <p>Nombre et force des concurrents directs</p>
+                <p>Nombre et force des concurrents directs sur votre marché</p>
                 
                 <h4>2. Menace des nouveaux entrants</h4>
                 <p>Facilité pour de nouveaux acteurs d'entrer sur le marché</p>
                 
                 <h4>3. Pouvoir de négociation des fournisseurs</h4>
-                <p>Influence des fournisseurs sur vos coûts</p>
+                <p>Influence des fournisseurs sur vos coûts et conditions</p>
                 
                 <h4>4. Pouvoir de négociation des clients</h4>
-                <p>Capacité des clients à influencer vos prix</p>
+                <p>Capacité des clients à influencer vos prix et conditions</p>
                 
                 <h4>5. Menace des produits de substitution</h4>
                 <p>Risque que votre produit soit remplacé par une alternative</p>
@@ -97,16 +90,31 @@ window.module2Content = {
             
             <h2>📋 Étapes de l'analyse</h2>
             <ol>
-                <li><strong>Définir le périmètre :</strong> Secteur, zone géographique, période</li>
+                <li><strong>Définir le périmètre :</strong> Secteur, zone géographique, période d'analyse</li>
                 <li><strong>Collecter les données :</strong> Sources primaires et secondaires</li>
                 <li><strong>Analyser les tendances :</strong> Évolutions passées et futures</li>
                 <li><strong>Identifier les opportunités :</strong> Segments sous-exploités</li>
                 <li><strong>Évaluer les risques :</strong> Menaces et obstacles</li>
+                <li><strong>Synthétiser :</strong> Conclusions et recommandations</li>
             </ol>
+            
+            <h2>💡 Avantages de l'analyse de marché</h2>
+            <ul>
+                <li><strong>Réduction des risques :</strong> Éviter les erreurs coûteuses</li>
+                <li><strong>Identification d'opportunités :</strong> Découvrir de nouveaux segments</li>
+                <li><strong>Optimisation des ressources :</strong> Cibler efficacement vos investissements</li>
+                <li><strong>Avantage concurrentiel :</strong> Anticiper les mouvements du marché</li>
+                <li><strong>Décisions éclairées :</strong> Baser vos stratégies sur des données solides</li>
+            </ul>
             
             <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
                 <h3>💡 Conseil pratique</h3>
-                <p>L'analyse de marché doit être un processus continu, pas un exercice ponctuel. Le marché évolue constamment et votre analyse doit suivre ces évolutions.</p>
+                <p>L'analyse de marché doit être un processus continu, pas un exercice ponctuel. Le marché évolue constamment et votre analyse doit suivre ces évolutions pour rester pertinente et efficace.</p>
+            </div>
+            
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>🎯 Objectif de ce module</h3>
+                <p>Ce module vous donnera les outils et méthodes nécessaires pour analyser efficacement votre marché, comprendre vos clients et développer des stratégies commerciales adaptées à votre environnement concurrentiel.</p>
             </div>
         `
     },
