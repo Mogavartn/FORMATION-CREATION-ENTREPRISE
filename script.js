@@ -155,6 +155,11 @@ const lessonContent = {
                 
                 <p>Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
                 
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+                    <h3>🎥 Vidéo d'introduction</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                </div>
+                
                 <h2>🚀 Objectifs de ce module</h2>
                 <ul>
                     <li>Comprendre les compétences clés nécessaires pour réussir en tant qu'entrepreneur</li>
@@ -185,6 +190,11 @@ const lessonContent = {
                 <h1>🚀 Comment lancer son projet d'entreprise sans se louper</h1>
                 
                 <p>Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+                    <h3>🎥 Vidéo de formation</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                </div>
                 
                 <h2>📋 Les étapes essentielles du lancement</h2>
                 
@@ -330,6 +340,11 @@ const lessonContent = {
                 
                 <p>Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat.</p>
                 
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+                    <h3>🎥 Vidéo de synthèse</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                </div>
+                
                 <h2>🎯 Points clés à retenir</h2>
                 
                 <h3>1. Les compétences entrepreneuriales essentielles</h3>
@@ -339,6 +354,33 @@ const lessonContent = {
                     <li><strong>Gestion financière :</strong> Maîtriser les aspects financiers de l'entreprise</li>
                     <li><strong>Planification stratégique :</strong> Définir et atteindre des objectifs clairs</li>
                 </ul>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/01 Mettre ses compétences au service de son projet/06_IMAGE_LEADERSHIP.png" alt="Leadership" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Leadership</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/01 Mettre ses compétences au service de son projet/06_IMAGE_FINANCIERE.png" alt="Gestion Financière" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Gestion Financière</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/01 Mettre ses compétences au service de son projet/06_IMAGE_GESTION.png" alt="Gestion" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Gestion</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/01 Mettre ses compétences au service de son projet/06_IMAGE_COMMUNICATION.png" alt="Communication" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Communication</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/01 Mettre ses compétences au service de son projet/06_IMAGE_RESOLUTION.png" alt="Résolution de Problèmes" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Résolution de Problèmes</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/01 Mettre ses compétences au service de son projet/06_IMAGE_SYNTHESE.png" alt="Synthèse" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Synthèse</h4>
+                    </div>
+                </div>
                 
                 <h3>2. L'importance du développement personnel</h3>
                 <p>Ces compétences ne sont pas innées mais peuvent être développées par la formation continue, l'expérience pratique et le mentorat.</p>
@@ -447,6 +489,11 @@ const lessonContent = {
                 
                 <p>L'analyse de marché est une étape fondamentale pour comprendre votre environnement concurrentiel et identifier les opportunités.</p>
                 
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+                    <h3>🎥 Vidéo d'introduction</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kRiHQjF9ylM" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                </div>
+                
                 <h2>🔍 Qu'est-ce que l'analyse de marché ?</h2>
                 <p>L'analyse de marché consiste à étudier systématiquement votre secteur d'activité pour comprendre :</p>
                 <ul>
@@ -455,6 +502,33 @@ const lessonContent = {
                     <li>Les segments de clientèle</li>
                     <li>Les forces concurrentielles</li>
                 </ul>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/01_IMAGE_ANALYSE.png" alt="Analyse" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Analyse</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/01_IMAGE_ETUDEDEMARCHE.png" alt="Étude de Marché" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Étude de Marché</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/01_IMAGE_CONCURRENCE.png" alt="Concurrence" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Concurrence</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/01_IMAGE_COMPORTEMENTS.png" alt="Comportements" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Comportements</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/01_IMAGE_SWOT.png" alt="Analyse SWOT" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Analyse SWOT</h4>
+                    </div>
+                    <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <img src="INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/01_IMAGE_ADAPTATIONOFFRE.png" alt="Adaptation de l'Offre" style="max-width: 100%; height: auto; border-radius: 4px;">
+                        <h4>Adaptation de l'Offre</h4>
+                    </div>
+                </div>
                 
                 <h2>📈 Méthodes d'analyse</h2>
                 
@@ -564,6 +638,11 @@ const lessonContent = {
                 <h1>🗺️ Customer Journey Mapping</h1>
                 
                 <p>Le Customer Journey Mapping vous permet de comprendre et d'optimiser l'expérience client à chaque étape de son parcours.</p>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+                    <h3>📊 Customer Journey Mapping</h3>
+                    <img src="INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/05_IMAGE_CustomerJourneyMapping.png" alt="Customer Journey Mapping" style="max-width: 100%; height: auto; border-radius: 8px;">
+                </div>
                 
                 <h2>🎯 Qu'est-ce que le Customer Journey ?</h2>
                 <p>C'est l'ensemble des interactions qu'un client a avec votre marque, depuis la prise de conscience de son besoin jusqu'à la fidélisation.</p>
@@ -688,6 +767,24 @@ const lessonContent = {
                             <button class="download-button" onclick="downloadPDF('argumentaire-commercial.pdf')">Télécharger</button>
                         </div>
                     </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🗺️</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Customer Journey Mapping A2TA2L</h3>
+                            <p class="pdf-description">Guide complet pour créer votre Customer Journey Map</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/06_PDF_customerjourneymappingA2TA2L.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📈</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Les étapes de la création d'entreprise - Le marché</h3>
+                            <p class="pdf-description">Guide détaillé sur l'analyse de marché</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/02 Connaître son marché pour mieux vendre/06_PDF_Lesetapesdelacreationdentreprise-Lemarche.pdf')">Télécharger</button>
+                        </div>
+                    </div>
                 </div>
                 
                 <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
@@ -699,8 +796,175 @@ const lessonContent = {
                 </div>
             `
         }
+    },
+    3: {
+        7: {
+            title: "Fiches Complémentaires",
+            moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
+            type: "pdf",
+            content: `
+                <h1>📄 Fiches Complémentaires - Module 3</h1>
+                
+                <p>Voici les documents complémentaires pour approfondir la gestion financière et la structuration de votre projet.</p>
+                
+                <div class="pdf-grid">
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📊</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Plan Financier</h3>
+                            <p class="pdf-description">Template pour créer votre plan financier détaillé</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/03 Définir les besoins et la rentabilité du projet/06_PDF_PLANFINANCIER.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🎯</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Lean Canvas</h3>
+                            <p class="pdf-description">Modèle Lean Canvas pour structurer votre projet</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/03 Définir les besoins et la rentabilité du projet/06_PDF_LEANCANVAS.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📋</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Value Proposition Canvas</h3>
+                            <p class="pdf-description">Outil pour définir votre proposition de valeur</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/03 Définir les besoins et la rentabilité du projet/02_PDF_ValuePropositionCanvasA2TA2L.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">📈</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Business Plan - Les étapes essentielles</h3>
+                            <p class="pdf-description">Guide pour rédiger un business plan efficace</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/03 Définir les besoins et la rentabilité du projet/07_PDF_Lesetapesessentiellespourredigerunbusinessplan.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">💡</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Les étapes de la création d'entreprise - L'idée</h3>
+                            <p class="pdf-description">Guide pour développer et valider votre idée d'entreprise</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/03 Définir les besoins et la rentabilité du projet/07_PDF_Lesetapesdelacreationdentreprise-Lidee.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">💰</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">Les étapes de la création d'entreprise - Chiffres et Financements</h3>
+                            <p class="pdf-description">Guide complet sur les aspects financiers</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/03 Définir les besoins et la rentabilité du projet/07_PDF_Lesetapesdelacreationdentreprise-ChiffresetFinancements.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🚀</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">La création d'entreprise en 6 étapes</h3>
+                            <p class="pdf-description">Méthodologie complète en 6 étapes</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/03 Définir les besoins et la rentabilité du projet/07_PDF_Lacreationdentrepriseen6etapes.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+                    <h3>💡 Conseils d'utilisation</h3>
+                    <ul>
+                        <li>Commencez par le Lean Canvas pour structurer votre idée</li>
+                        <li>Utilisez le Value Proposition Canvas pour clarifier votre offre</li>
+                        <li>Élaborez votre plan financier avec les templates fournis</li>
+                        <li>Référez-vous au guide en 6 étapes pour ne rien oublier</li>
+                    </ul>
+                </div>
+            `
+        }
+    },
+    13: {
+        1: {
+            title: "Études de Cas",
+            moduleTitle: "Module 13 : Études de cas",
+            type: "pdf",
+            content: `
+                <h1>📚 Études de Cas - Module 13</h1>
+                
+                <p>Découvrez des exemples concrets d'entreprises innovantes et leurs stratégies de développement.</p>
+                
+                <div class="pdf-grid">
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🌱</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">WorkGreen - Réinventer le Coworking</h3>
+                            <p class="pdf-description">Étude de cas sur un espace de coworking durable et écologique</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/13 Études de cas/01_PDF_WorkGreen_ReinventerleCoworkingpourunFuturDurable.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🛒</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">GreenKart - Commerce Local et Écoresponsable</h3>
+                            <p class="pdf-description">Réinventer le commerce avec des produits locaux et écoresponsables</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/13 Études de cas/01_PDF_GreenKart_Reinventerle-commerceavecdesproduitslocauxetecoresponsables.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🥗</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">FitBio - Bio et Technologie</h3>
+                            <p class="pdf-description">L'alliance du bio et de la technologie pour des choix alimentaires écoresponsables</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/13 Études de cas/01_PDF_FitBio_Lalliancedubioetdelatechnologiepourdeschoixalimentairesecoresponsables.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🚗</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">EcoRide - Solution Électrique</h3>
+                            <p class="pdf-description">La solution électrique pour une ville plus verte et plus agile</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/13 Études de cas/01_PDF_EcoRide_LaSolutionElectriquepouruneVillePlusVerteetPlusAgile.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-card">
+                        <div class="pdf-preview">🔨</div>
+                        <div class="pdf-info">
+                            <h3 class="pdf-title">AtelierBoisCo - Artisanat d'Excellence</h3>
+                            <p class="pdf-description">Redonner vie à l'artisanat d'excellence</p>
+                            <button class="download-button" onclick="downloadPDF('INSTALL FILES/FULL_STRUCTURE/13 Études de cas/01_PDF_AtelierBoisCo_RedonnerViealArtisanatdExcellence.pdf')">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+                    <h3>💡 Comment utiliser ces études de cas</h3>
+                    <ul>
+                        <li>Analysez les stratégies de chaque entreprise</li>
+                        <li>Identifiez les points communs de réussite</li>
+                        <li>Adaptez les bonnes pratiques à votre projet</li>
+                        <li>Réfléchissez aux défis spécifiques de chaque secteur</li>
+                    </ul>
+                </div>
+            `
+        }
     }
 };
+
+// Fonction pour télécharger les PDFs
+function downloadPDF(pdfPath) {
+    // Créer un lien de téléchargement
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.download = pdfPath.split('/').pop(); // Nom du fichier
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
 // Fonctions utilitaires
 function checkAuth() {
