@@ -315,8 +315,8 @@ window.module1Content = {
                 </div>
                 
                 <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/06_IMAGE_FINANCIERE.png" alt="Gestion Financière" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Gestion Financière</h4>
+                    <img src="assets/images/06_IMAGE_FINANCIERE.png" alt="Compétences Financières" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Compétences Financières</h4>
                     <p>Maîtriser les aspects financiers et la rentabilité</p>
                 </div>
                 
@@ -380,7 +380,7 @@ window.module1Content = {
             <p>Les objectifs SMART sont un outil puissant pour définir et atteindre vos objectifs entrepreneuriaux de manière efficace et mesurable.</p>
             
             <div style="text-align: center; margin: 30px 0;">
-                <img src="assets/images/01_IMAGE_SMARTGOALS.png" alt="SMART Goals" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="assets/images/07_IMAGE_SMARTGOALS.png" alt="SMART Goals" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
             </div>
             
             <h2>📝 Qu'est-ce que SMART ?</h2>
