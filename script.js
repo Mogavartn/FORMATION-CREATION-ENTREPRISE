@@ -1089,14 +1089,20 @@ function getLessonData(moduleId, lessonId) {
     let content = null;
     let moduleTitle = `Module ${moduleId} : ${module.title}`;
     
-    // Vérifier les modules chargés
+    // Vérifier les modules chargés (format: module2Content, module3Content, etc.)
     const moduleContentVar = `module${moduleId}Content`;
+    console.log(`Recherche du module: ${moduleContentVar}, leçon: ${lessonId}`);
+    
     if (typeof window[moduleContentVar] !== 'undefined' && window[moduleContentVar][lessonId]) {
+        console.log(`Contenu trouvé dans ${moduleContentVar}`);
         content = window[moduleContentVar][lessonId].content;
         moduleTitle = window[moduleContentVar][lessonId].moduleTitle || moduleTitle;
     } else if (lessonContent[moduleId] && lessonContent[moduleId][lessonId]) {
+        console.log(`Contenu trouvé dans lessonContent`);
         content = lessonContent[moduleId][lessonId].content;
         moduleTitle = lessonContent[moduleId][lessonId].moduleTitle || moduleTitle;
+    } else {
+        console.log(`Aucun contenu trouvé pour module ${moduleId}, leçon ${lessonId}`);
     }
     
     // Si aucun contenu n'est trouvé, utiliser le contenu par défaut

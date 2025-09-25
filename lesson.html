@@ -94,6 +94,14 @@
         // Initialiser la page de leçon
         initializeLesson();
         
+        // Debug: vérifier les modules chargés
+        console.log('Modules chargés:', {
+            module1Content: typeof window.module1Content,
+            module2Content: typeof window.module2Content,
+            module3Content: typeof window.module3Content,
+            module4Content: typeof window.module4Content
+        });
+        
         function initializeLesson() {
             // Charger la navigation
             generateNavigation();
@@ -115,6 +123,11 @@
                 document.getElementById('lessonTitle').textContent = lesson.title;
                 document.getElementById('moduleTitle').textContent = lesson.moduleTitle;
                 document.getElementById('lessonContent').innerHTML = lesson.content;
+            } else {
+                // Fallback si aucune leçon n'est trouvée
+                document.getElementById('lessonTitle').textContent = 'Leçon non trouvée';
+                document.getElementById('moduleTitle').textContent = `Module ${currentModule}`;
+                document.getElementById('lessonContent').innerHTML = '<h1>Contenu en cours de préparation</h1><p>Cette leçon sera bientôt disponible.</p>';
             }
         }
         
@@ -170,6 +183,11 @@
             const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
             const isCompleted = progress[lessonKey] && progress[lessonKey].completed;
             
+            // Réinitialiser le bouton
+            completeButton.textContent = 'Marquer comme terminé';
+            completeButton.style.background = '#007bff';
+            completeButton.disabled = false;
+            
             if (isCompleted) {
                 completeButton.textContent = '✓ Terminé';
                 completeButton.style.background = '#28a745';
@@ -182,10 +200,14 @@
             
             if (!prevLesson) {
                 prevButton.disabled = true;
+            } else {
+                prevButton.disabled = false;
             }
             
             if (!nextLesson) {
                 nextButton.disabled = true;
+            } else {
+                nextButton.disabled = false;
             }
         }
         
