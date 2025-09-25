@@ -89,79 +89,8 @@ window.module1Content = {
         title: "Présentation des compétences requises pour être un chef d'entreprise",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <h1>👔 Présentation des compétences requises pour être un chef d'entreprise</h1>
+            <h1>🤔 Démarrez avec un fait intrigant !</h1>
             
-            <p>Être chef d'entreprise nécessite un ensemble de compétences variées et complémentaires. Découvrons ensemble les principales.</p>
-            
-            <h2>🧠 Compétences techniques</h2>
-            
-            <h3>Gestion financière</h3>
-            <p>Savoir lire et interpréter les états financiers, gérer la trésorerie et prendre des décisions financières éclairées.</p>
-            
-            <h3>Marketing et commercial</h3>
-            <p>Comprendre les besoins clients, développer des stratégies marketing efficaces et savoir vendre.</p>
-            
-            <h3>Gestion des ressources humaines</h3>
-            <p>Recruter, motiver et diriger une équipe, gérer les conflits et développer les talents.</p>
-            
-            <h2>💡 Compétences comportementales</h2>
-            
-            <h3>Leadership</h3>
-            <p>Inspirer et guider son équipe vers un objectif commun, prendre des décisions difficiles.</p>
-            
-            <h3>Communication</h3>
-            <p>Savoir s'exprimer clairement, écouter activement et négocier efficacement.</p>
-            
-            <h3>Adaptabilité</h3>
-            <p>Être capable de s'adapter rapidement aux changements du marché et aux nouvelles technologies.</p>
-            
-            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-                <h3>💪 Développement des compétences</h3>
-                <p>Ces compétences peuvent être développées par la formation, l'expérience et la pratique. L'important est d'identifier vos points forts et vos axes d'amélioration.</p>
-            </div>
-        `
-    },
-    4: {
-        title: "Comprendre l'importance des compétences entrepreneuriales",
-        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
-        content: `
-            <h1>🎯 Comprendre l'importance des compétences entrepreneuriales</h1>
-            
-            <p>Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité.</p>
-            
-            <h2>🔍 Pourquoi ces compétences sont-elles cruciales ?</h2>
-            
-            <h3>1. Différenciation concurrentielle</h3>
-            <p>Dans un marché compétitif, ce sont souvent les compétences de l'entrepreneur qui font la différence entre le succès et l'échec.</p>
-            
-            <h3>2. Gestion des défis</h3>
-            <p>L'entrepreneuriat est parsemé d'obstacles. Des compétences solides vous aident à les surmonter efficacement.</p>
-            
-            <h3>3. Croissance et développement</h3>
-            <p>Pour faire grandir votre entreprise, vous devez maîtriser différents domaines de compétences.</p>
-            
-            <h2>📊 Impact sur la performance</h2>
-            
-            <p>Des études montrent que les entrepreneurs avec des compétences développées :</p>
-            <ul>
-                <li>Ont 3x plus de chances de survie après 5 ans</li>
-                <li>Génèrent 40% plus de revenus</li>
-                <li>Attirent plus facilement des investisseurs</li>
-            </ul>
-            
-            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <h3>📈 Retour sur investissement</h3>
-                <p>Investir dans le développement de vos compétences entrepreneuriales est l'un des meilleurs investissements que vous puissiez faire pour votre entreprise.</p>
-            </div>
-        `
-    },
-    5: {
-        title: "Analyse des compétences clés pour gérer une entreprise",
-        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
-        content: `
-            <h1>🔍 Analyse des compétences clés pour gérer une entreprise</h1>
-            
-            <h2>🤔 Démarrez avec un fait intrigant !</h2>
             <p>Saviez-vous que plus de 90 % des startups échouent dans leurs premières années d'existence ? Ce chiffre montre qu'être un chef d'entreprise demande bien plus que d'avoir une bonne idée : il faut des compétences diverses et bien développées.</p>
             
             <h2>🛠️ Compétences Requises pour l'Entrepreneuriat</h2>
@@ -202,7 +131,7 @@ window.module1Content = {
                 <li><strong>Objectifs SMART :</strong> Définir des objectifs Spécifiques, Mesurables, Atteignables, Réalistes et Temporels.</li>
             </ul>
             
-            <h2>💡 Le Rôle de l'Entrepreneur</h2>
+            <h3>💡 Le Rôle de l'Entrepreneur</h3>
             <p>L'entrepreneur est le moteur de la croissance et du succès de son entreprise. Il doit non seulement gérer quotidiennement les opérations, mais aussi être visionnaire et innovant. Elon Musk est un exemple typique d'entrepreneur multidimensionnel, naviguant entre ses diverses entreprises comme SpaceX et Tesla, tout en inspirant un changement global.</p>
             
             <h3>🌟 Adaptabilité et Innovation</h3>
@@ -223,7 +152,7 @@ window.module1Content = {
                 <li><strong>Assurances :</strong> Utiliser les assurances pour protéger l'entreprise contre les risques imprévisibles.</li>
             </ul>
             
-            <h2>🔍 Conclusion</h2>
+            <h3>🔍 Conclusion</h3>
             <p>Être un chef d'entreprise requiert une combinaison unique de compétences. Du leadership à la gestion financière, en passant par la prise de décision, la planification stratégique, et les capacités d'adaptabilité et d'innovation, chaque aspect contribue à créer et à maintenir une entreprise prospère. En comprenant et en développant ces compétences, les entrepreneurs peuvent non seulement survivre mais aussi prospérer dans le monde compétitif des affaires.</p>
             
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
@@ -237,6 +166,120 @@ window.module1Content = {
                 
                 <p><strong>Étape 3 : Élaboration d'un plan d'action</strong><br>
                 Créer un plan d'action détaillé décrivant comment acquérir et développer ces compétences, en mettant l'accent sur le développement personnel, la formation et l'expérience pratique.</p>
+            </div>
+        `
+    },
+    4: {
+        title: "Comprendre l'importance des compétences entrepreneuriales",
+        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+        content: `
+            <h1>🎯 Comprendre l'importance des compétences entrepreneuriales</h1>
+            
+            <p>Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité et à naviguer dans l'environnement complexe des affaires.</p>
+            
+            <h2>🔍 Pourquoi ces compétences sont-elles cruciales ?</h2>
+            
+            <h3>1. Identification des opportunités</h3>
+            <p>Un état d'esprit entrepreneurial permet aux individus de voir des solutions là où les autres voient des problèmes. En s'entraînant à garder un œil vigilant sur le marché et à anticiper les besoins des consommateurs, un entrepreneur peut <strong>identifier des opportunités</strong> avant ses concurrents. C'est grâce à cette perspicacité que de nombreuses startups réussissent à se démarquer dans des marchés déjà saturés.</p>
+            
+            <h3>2. Gestion efficace des ressources</h3>
+            <p>Pour réussir, un entrepreneur doit apprendre à allouer les ressources intelligemment, à minimiser les gaspillages, et à maximiser les outputs. C'est cette capacité de <strong>gestion des ressources</strong> qui permet non seulement de lancer une entreprise, mais aussi de la maintenir en vie et en croissance à long terme.</p>
+            
+            <h3>3. Navigation dans les défis commerciaux</h3>
+            <p>Ce qui différencie un entrepreneur prospère est sa réponse aux obstacles : ils ne voient pas les échecs comme des fins, mais comme des étapes d'apprentissage. En développant une mentalité axée sur la <strong>résilience</strong>, les entrepreneurs peuvent pivoter, innover, et finalement triompher malgré les adversités.</p>
+            
+            <h3>4. Impact sur le développement économique et la création d'emplois</h3>
+            <p>L'entrepreneuriat contribue à la <strong>croissance économique</strong> en introduisant de nouvelles technologies, en ouvrant de nouveaux marchés et en améliorant l'efficacité des industries existantes. Les compétences entrepreneuriales sont donc essentielles pour non seulement assurer la viabilité d'une entreprise individuelle, mais aussi pour favoriser un environnement économique dynamique et florissant.</p>
+            
+            <h2>📊 Impact sur la performance</h2>
+            
+            <p>Des études montrent que les entrepreneurs avec des compétences développées :</p>
+            <ul>
+                <li>Ont 3x plus de chances de survie après 5 ans</li>
+                <li>Génèrent 40% plus de revenus</li>
+                <li>Attirent plus facilement des investisseurs</li>
+                <li>Créent plus d'emplois dans leur communauté</li>
+            </ul>
+            
+            <h2>🎯 Conclusion</h2>
+            <p>En conclusion, comprendre et développer des compétences entrepreneuriales est crucial non seulement pour le succès à long terme d'une entreprise, mais aussi pour le bien-être économique généralisé. En cultivant un état d'esprit entrepreneurial, une efficacité dans la gestion des ressources, une résilience face aux défis, et en reconnaissant l'impact économique plus large de l'entrepreneuriat, on peut véritablement transformer des idées en réalités prospères et durables.</p>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📈 Retour sur investissement</h3>
+                <p>Investir dans le développement de vos compétences entrepreneuriales est l'un des meilleurs investissements que vous puissiez faire pour votre entreprise et pour l'économie dans son ensemble.</p>
+            </div>
+            
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
+                <h3>📝 Devoir: Analyse de l'impact de l'entrepreneuriat</h3>
+                <p><strong>Instructions :</strong></p>
+                <p><strong>Impact de l'entrepreneuriat sur le développement économique :</strong> En utilisant des données et des recherches approfondies, analysez et expliquez l'impact de l'entrepreneuriat sur le développement économique d'un pays ou d'une région spécifique.</p>
+                
+                <p><strong>Plan d'action entrepreneurial :</strong> Créez un plan détaillé pour une entreprise hypothétique ou pour votre projet en mettant l'accent sur la manière dont les compétences entrepreneuriales peuvent être mises en pratique pour assurer la performance et la pérennité de l'entreprise.</p>
+                
+                <p>La meilleure solution sera un plan d'action entrepreneurial complet qui démontre une compréhension approfondie des compétences entrepreneuriales, de leur impact sur le développement économique et de leur application pratique dans la création et la gestion d'une entreprise. Le plan devra être accompagné d'exemples concrets, de données pertinentes et de stratégies innovantes pour assurer le succès de l'entreprise.</p>
+            </div>
+        `
+    },
+    5: {
+        title: "Analyse des compétences clés pour gérer une entreprise",
+        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+        content: `
+            <h1>🔍 Analyse des compétences clés pour gérer une entreprise</h1>
+            
+            <p>Saviez-vous que plus de 60% des nouvelles entreprises échouent dans les trois premières années ? Ce chiffre alarmant met en évidence l'importance cruciale des compétences clés pour une gestion efficace d'une entreprise. Explorons ces compétences essentielles et voyons comment elles peuvent transformer une entreprise naissante en une success story durable.</p>
+            
+            <h2>💸 Littératie financière</h2>
+            <p>La <strong>💡littératie financière</strong> est la capacité à comprendre et à gérer les finances d'une entreprise de manière éclairée. Imaginez un chef d'entreprise qui ne comprend pas les états financiers : il serait impossible pour lui de savoir si son entreprise est rentable ou non. Par exemple, Steve Jobs était connu pour sa maîtrise des chiffres, ce qui lui a permis de prendre des décisions stratégiques pour Apple.</p>
+            
+            <p>✅ <strong>Compétences spécifiques:</strong></p>
+            <ul>
+                <li><strong>Élaboration de budgets</strong> : Apprenez à établir des prévisions financières réalistes et à gérer les flux de trésorerie.</li>
+                <li><strong>Analyse des états financiers</strong> : Comprenez les bilans, les comptes de résultats et les tableaux de flux de trésorerie pour évaluer la santé financière de votre entreprise.</li>
+            </ul>
+            
+            <h2>🌐 Communication</h2>
+            <p>La <strong>📡 communication efficace</strong> est indispensable pour coordonner les efforts au sein de l'entreprise. Une mauvaise communication peut mener à des malentendus coûteux et à une équipe démotivée. Pensez à Elon Musk, dont la façon transparente et authentique de communiquer a galvanisé ses équipes chez SpaceX et Tesla.</p>
+            
+            <p>✅ <strong>Compétences spécifiques:</strong></p>
+            <ul>
+                <li><strong>Communication interne</strong> : Assurez une circulation fluide de l'information entre les différents départements.</li>
+                <li><strong>Communication externe</strong> : Gérez les relations avec les partenaires, clients, et médias pour maintenir une image de marque positive.</li>
+            </ul>
+            
+            <h2>📈 Marketing</h2>
+            <p>Un produit fantastique ne vaut rien si personne ne le connaît. C'est ici que le <strong>✈️ marketing</strong> entre en jeu. Jeff Bezos a réussi à faire d'Amazon un leader mondial en se concentrant intensément sur la satisfaction des clients et en innovant constamment.</p>
+            
+            <p>✅ <strong>Compétences spécifiques:</strong></p>
+            <ul>
+                <li><strong>Analyse de marché</strong> : Identifiez les opportunités et les menaces dans votre secteur.</li>
+                <li><strong>Stratégies de promotion</strong> : Développez des campagnes marketing efficaces qui touchent votre cible démographique.</li>
+            </ul>
+            
+            <h2>🌟 Pensée stratégique</h2>
+            <p>La <strong>♟️ pensée stratégique</strong> vous permet de voir au-delà des opérations quotidiennes et de préparer l'avenir de votre entreprise. Henry Ford a transformé l'industrie automobile grâce à sa vision révolutionnaire de la production de masse.</p>
+            
+            <p>✅ <strong>Compétences spécifiques:</strong></p>
+            <ul>
+                <li><strong>Planification à long terme</strong> : Établissez des objectifs à long terme et des plans d'action pour les atteindre.</li>
+                <li><strong>Adaptabilité</strong> : Apprenez à pivoter lorsque les conditions du marché changent.</li>
+            </ul>
+            
+            <h2>💼 Ressources humaines</h2>
+            <p><strong>👥 La gestion des ressources humaines</strong> est fondamentale pour bâtir une équipe motivée et compétente. Richard Branson a souvent attribué le succès de Virgin à sa capacité à embaucher les bonnes personnes et à les garder engagées.</p>
+            
+            <p>✅ <strong>Compétences spécifiques:</strong></p>
+            <ul>
+                <li><strong>Recrutement</strong> : Attirez et sélectionnez les talents qui correspondent à la culture de votre entreprise.</li>
+                <li><strong>Développement des talents</strong> : Investissez dans la formation et le développement de vos employés.</li>
+                <li><strong>Gestion des conflits</strong> : Apprenez à résoudre les différends de manière constructive.</li>
+            </ul>
+            
+            <h2>🎯 Conclusion</h2>
+            <p>Ces compétences clés ne sont pas isolées mais s'interconnectent pour créer un écosystème de gestion efficace. En développant chacune de ces compétences, vous construisez les fondations solides nécessaires pour transformer votre vision entrepreneuriale en une entreprise prospère et durable.</p>
+            
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>💪 Action recommandée</h3>
+                <p>Identifiez vos points forts actuels et les domaines à développer. Créez un plan d'apprentissage personnalisé pour renforcer ces compétences essentielles.</p>
             </div>
         `
     },
@@ -335,6 +378,10 @@ window.module1Content = {
             <h1>🎯 SMART Goals</h1>
             
             <p>Les objectifs SMART sont un outil puissant pour définir et atteindre vos objectifs entrepreneuriaux de manière efficace et mesurable.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="assets/images/01_IMAGE_SMARTGOALS.png" alt="SMART Goals" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
             
             <h2>📝 Qu'est-ce que SMART ?</h2>
             
