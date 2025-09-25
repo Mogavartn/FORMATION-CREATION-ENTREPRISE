@@ -39,5 +39,5 @@ if (typeof module !== 'undefined' && module.exports) {
 
 // Exposer globalement pour l'utilisation dans lesson.html
 if (typeof window !== 'undefined') {
-    window.module1Content = module1Content;
+    window.module13Content = module13Content;
 }
