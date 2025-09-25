@@ -3,10 +3,15 @@ const module1Content = {
     1: {
         title: "À quoi vous attendre dans ce premier module",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+        type: "video",
         content: `
             <h1>🎯 À quoi vous attendre dans ce premier module</h1>
             
             <p>Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+            </div>
             
             <h2>🚀 Objectifs de ce module</h2>
             <ul>
@@ -38,6 +43,10 @@ const module1Content = {
             <h1>🚀 Comment lancer son projet d'entreprise sans se louper</h1>
             
             <p>Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+            </div>
             
             <h2>📋 Les étapes essentielles du lancement</h2>
             
@@ -239,6 +248,10 @@ const module1Content = {
             
             <p>Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat. Récapitulons les points clés que nous avons abordés.</p>
             
+            <div style="text-align: center; margin: 30px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+            </div>
+            
             <h2>🎯 Points clés à retenir</h2>
             
             <h3>1. Les compétences entrepreneuriales essentielles</h3>
@@ -248,6 +261,46 @@ const module1Content = {
                 <li><strong>Gestion financière :</strong> Maîtriser les aspects financiers de l'entreprise</li>
                 <li><strong>Planification stratégique :</strong> Définir et atteindre des objectifs clairs</li>
             </ul>
+            
+            <h2>🖼️ Visualisation des compétences clés</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/06_IMAGE_LEADERSHIP.png" alt="Leadership" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Leadership</h4>
+                    <p>Inspirer et guider son équipe vers un objectif commun</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/06_IMAGE_FINANCIERE.png" alt="Gestion Financière" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Gestion Financière</h4>
+                    <p>Maîtriser les aspects financiers et la rentabilité</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/06_IMAGE_COMMUNICATION.png" alt="Communication" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Communication</h4>
+                    <p>Savoir s'exprimer clairement et écouter activement</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/06_IMAGE_GESTION.png" alt="Gestion" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Gestion</h4>
+                    <p>Organiser et optimiser les ressources de l'entreprise</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/06_IMAGE_RESOLUTION.png" alt="Résolution de Problèmes" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Résolution de Problèmes</h4>
+                    <p>Analyser et résoudre efficacement les défis</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/06_IMAGE_SYNTHESE.png" alt="Synthèse" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Synthèse</h4>
+                    <p>Intégrer toutes les compétences pour réussir</p>
+                </div>
+            </div>
             
             <h3>2. L'importance du développement personnel</h3>
             <p>Ces compétences ne sont pas innées mais peuvent être développées par :</p>

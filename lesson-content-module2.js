@@ -1,12 +1,16 @@
 // Module 2: Connaître son marché pour mieux vendre
 const module2Content = {
     1: {
-        title: "Analyse du Marché",
+        title: "Intro - Connaître son marché pour mieux vendre",
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         content: `
-            <h1>📊 Analyse du Marché</h1>
+            <h1>📊 Intro - Connaître son marché pour mieux vendre</h1>
             
             <p>L'analyse de marché est une étape fondamentale pour comprendre votre environnement concurrentiel et identifier les opportunités.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kRiHQjF9ylM" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+            </div>
             
             <h2>🔍 Qu'est-ce que l'analyse de marché ?</h2>
             <p>L'analyse de marché consiste à étudier systématiquement votre secteur d'activité pour comprendre :</p>
@@ -16,6 +20,46 @@ const module2Content = {
                 <li>Les segments de clientèle</li>
                 <li>Les forces concurrentielles</li>
             </ul>
+            
+            <h2>🖼️ Visualisation des concepts clés</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/01_IMAGE_ETUDEDEMARCHE.png" alt="Étude de Marché" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Étude de Marché</h4>
+                    <p>Analyser systématiquement votre secteur d'activité</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/01_IMAGE_ANALYSE.png" alt="Analyse" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Analyse</h4>
+                    <p>Comprendre les données et tendances du marché</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/01_IMAGE_SWOT.png" alt="Analyse SWOT" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Analyse SWOT</h4>
+                    <p>Forces, Faiblesses, Opportunités et Menaces</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/01_IMAGE_CONCURRENCE.png" alt="Concurrence" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Concurrence</h4>
+                    <p>Identifier et analyser vos concurrents</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/01_IMAGE_COMPORTEMENTS.png" alt="Comportements" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Comportements</h4>
+                    <p>Comprendre les habitudes d'achat des clients</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+                    <img src="assets/images/01_IMAGE_ADAPTATIONOFFRE.png" alt="Adaptation de l'Offre" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h4>Adaptation de l'Offre</h4>
+                    <p>Adapter votre produit aux besoins du marché</p>
+                </div>
+            </div>
             
             <h2>📈 Méthodes d'analyse</h2>
             
@@ -401,6 +445,12 @@ const module2Content = {
             
             <p>Le Customer Journey Mapping vous permet de comprendre et d'optimiser l'expérience client à chaque étape de son parcours.</p>
             
+            <h2>🖼️ Visualisation du Customer Journey</h2>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="assets/images/05_IMAGE_CustomerJourneyMapping.png" alt="Customer Journey Mapping" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            
             <h2>🎯 Qu'est-ce que le Customer Journey ?</h2>
             <p>C'est l'ensemble des interactions qu'un client a avec votre marque, depuis la prise de conscience de son besoin jusqu'à la fidélisation.</p>
             
@@ -564,6 +614,24 @@ const module2Content = {
                         <h3 class="pdf-title">Argumentaire Commercial</h3>
                         <p class="pdf-description">Structure et exemples d'argumentaires commerciaux efficaces</p>
                         <button class="download-button" onclick="downloadPDF('argumentaire-commercial.pdf')">Télécharger</button>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🗺️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Customer Journey Mapping A2TA2L</h3>
+                        <p class="pdf-description">Guide complet pour créer votre carte de parcours client</p>
+                        <button class="download-button" onclick="downloadPDF('06_PDF_customerjourneymappingA2TA2L.pdf')">Télécharger</button>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Les Étapes de la Création d'Entreprise - Le Marché</h3>
+                        <p class="pdf-description">Guide détaillé sur l'analyse de marché pour les créateurs d'entreprise</p>
+                        <button class="download-button" onclick="downloadPDF('06_PDF_Lesetapesdelacreationdentreprise-Lemarche.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
