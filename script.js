@@ -1085,14 +1085,28 @@ function getLessonData(moduleId, lessonId) {
     const lesson = module.lessons.find(l => l.id === lessonId);
     if (!lesson) return null;
     
-    // Récupérer le contenu depuis lessonContent si disponible
-    const content = lessonContent[moduleId] && lessonContent[moduleId][lessonId] 
-        ? lessonContent[moduleId][lessonId].content 
-        : `<h1>${lesson.title}</h1><p>Contenu de la leçon en cours de préparation...</p>`;
+    // Essayer de récupérer le contenu depuis les modules chargés
+    let content = null;
+    let moduleTitle = `Module ${moduleId} : ${module.title}`;
+    
+    // Vérifier les modules chargés
+    const moduleContentVar = `module${moduleId}Content`;
+    if (typeof window[moduleContentVar] !== 'undefined' && window[moduleContentVar][lessonId]) {
+        content = window[moduleContentVar][lessonId].content;
+        moduleTitle = window[moduleContentVar][lessonId].moduleTitle || moduleTitle;
+    } else if (lessonContent[moduleId] && lessonContent[moduleId][lessonId]) {
+        content = lessonContent[moduleId][lessonId].content;
+        moduleTitle = lessonContent[moduleId][lessonId].moduleTitle || moduleTitle;
+    }
+    
+    // Si aucun contenu n'est trouvé, utiliser le contenu par défaut
+    if (!content) {
+        content = `<h1>${lesson.title}</h1><p>Contenu de la leçon en cours de préparation...</p>`;
+    }
     
     return {
         title: lesson.title,
-        moduleTitle: `Module ${moduleId} : ${module.title}`,
+        moduleTitle: moduleTitle,
         content: content,
         type: lesson.type
     };
@@ -1163,27 +1177,72 @@ function sendProgressToServer() {
     const progress = localStorage.getItem('lessonProgress');
     const username = localStorage.getItem('username');
     
-    if (!progress || !username) return;
+    if (!progress || !username) {
+        console.log('Pas de progression ou nom d\'utilisateur à sauvegarder');
+        return;
+    }
     
-    fetch('admin/api.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            action: 'update_progress',
-            username: username,
-            progress: JSON.parse(progress),
-            timestamp: new Date().toISOString()
+    try {
+        const progressData = JSON.parse(progress);
+        
+        fetch('admin/api.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                action: 'update_progress',
+                username: username,
+                progress: progressData,
+                timestamp: new Date().toISOString()
+            })
         })
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Progression sauvegardée:', data);
-    })
-    .catch(error => {
-        console.error('Erreur lors de la sauvegarde:', error);
-    });
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Progression sauvegardée avec succès:', data);
+            if (data.success) {
+                console.log(`Leçons terminées: ${data.stats.completed_lessons}, Taux de completion: ${data.stats.completion_rate}%`);
+            }
+        })
+        .catch(error => {
+            console.error('Erreur lors de la sauvegarde:', error);
+            // Optionnel: afficher une notification d'erreur à l'utilisateur
+            showNotification('Erreur lors de la sauvegarde de la progression', 'error');
+        });
+    } catch (error) {
+        console.error('Erreur lors du parsing de la progression:', error);
+    }
+}
+
+function showNotification(message, type = 'success') {
+    // Créer une notification temporaire
+    const notification = document.createElement('div');
+    const bgColor = type === 'error' ? '#dc3545' : '#28a745';
+    
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: ${bgColor};
+        color: white;
+        padding: 15px 20px;
+        border-radius: 6px;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        max-width: 300px;
+        word-wrap: break-word;
+    `;
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, type === 'error' ? 5000 : 3000);
 }
 
 // Fonction d'initialisation générale
