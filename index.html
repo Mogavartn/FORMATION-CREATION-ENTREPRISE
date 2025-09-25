@@ -65,15 +65,17 @@
             }
         });
 
-        // Vérifier si déjà connecté
-        if (localStorage.getItem('isLoggedIn') === 'true') {
-            const username = localStorage.getItem('username');
-            if (username === 'admin') {
-                window.location.href = 'admin/index.php';
-            } else {
-                window.location.href = 'dashboard.html';
+        // Vérifier si déjà connecté au chargement de la page
+        window.addEventListener('load', function() {
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                const username = localStorage.getItem('username');
+                if (username === 'admin') {
+                    window.location.href = 'admin/index.php';
+                } else {
+                    window.location.href = 'dashboard.html';
+                }
             }
-        }
+        });
     </script>
 </body>
 </html>
