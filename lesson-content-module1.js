@@ -10,7 +10,7 @@ window.module1Content = {
             <p>Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
             
             <div style="text-align: center; margin: 30px 0;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                <iframe width="560" height="315" autoplay controls src="https://www.youtube.com/embed/H57Mfi9aWCo" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
             </div>
             
             <h2>🚀 Objectifs de ce module</h2>
@@ -249,7 +249,7 @@ window.module1Content = {
             <p>Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat. Récapitulons les points clés que nous avons abordés.</p>
             
             <div style="text-align: center; margin: 30px 0;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/idQ5PAYCtho" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
             </div>
             
             <h2>🎯 Points clés à retenir</h2>

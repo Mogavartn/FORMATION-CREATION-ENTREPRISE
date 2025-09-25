@@ -9,7 +9,7 @@ window.module5Content = {
         <p>Cette leçon fait partie du Module 5 : Comprendre les différents régimes fiscaux. Vous allez découvrir les concepts essentiels pour réussir votre projet entrepreneurial.</p>
         
         <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
         
         <h2>🎯 Objectifs de cette leçon</h2>
